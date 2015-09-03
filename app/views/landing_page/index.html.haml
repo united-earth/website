@@ -1,7 +1,10 @@
-.header
-  .header__shade
+= content_for :parallax_background do
+  .landing__background
   %video.header__bgvid{autoplay: true, loop: true, poster: image_path('landing_page/bg.jpg'), onclick: "document.getElementById('bgvid').play()"}
     %source{src: 'bg.m4v', type: 'video/x-m4v'}
+
+.header
+  .header__shade
   .header__prophecy
     .header__prophecy__header= t('landing.prophecy.header')
     .header__prophecy__content= t('landing.prophecy.content')

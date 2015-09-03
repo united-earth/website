@@ -2,6 +2,25 @@
 @import 'landing_page'
 @import 'fonts'
 
+%parallax-layer
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.parallax-container
+  perspective: 1px
+  overflow-x: hidden
+  overflow-y: auto
+  height: 100vh
+
+.parallax-foreground
+  @extend %parallax-layer
+  transform: translateZ(0)
+  width: 100%
+
+
 body
   @extend %fontRegular
   font-family: 'Montserrat'
