@@ -1,3 +1,101 @@
-// Place all the styles related to the landing_page controller here.
-// They will automatically be included in application.css.
-// You can use Sass here: http://sass-lang.com/
+%landing-header
+  font-size: 35px
+  margin-bottom: 13px
+
+%landing-content
+  font-size: 21px
+  opacity: 0.7
+
+.header
+  position: relative
+  height: 720px
+  width: 100%
+  background-color: black
+  text-align: center
+
+  &__shade
+    position: absolute
+    //top: 50%
+    width: 100%
+    height: 720px
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)),to(rgba(0,0,0,1)))
+    z-index: 2
+
+  &__bgvid
+    position: relative
+    max-width: 100%
+    margin-top: 150px
+    background: url(bg.jpg) no-repeat
+    background-size: cover
+
+
+  &__prophecy
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    color: white
+    z-index: 3
+
+    &__header
+      @extend %landing-header
+
+
+    &__content
+      @extend %landing-content
+      margin-bottom: 13px
+
+    &__footer
+      font-size: 15px
+      opacity: 0.5
+
+  &__logo
+    position: absolute
+    left: 50%
+    bottom: 45px
+    transform: translateX(-50%)
+    color: white
+    z-index: 4
+
+.roadmap
+  height: 484px
+  width: 100%
+  padding-top: 135px
+  text-align: center
+  background: black
+  color: white
+
+  &__header
+    @extend %landing-header
+
+  &__content
+    @extend %landing-content
+    width: 790px
+    margin: auto
+
+  &__points
+    margin-top: 53px
+    height: 78px
+    font-size: 18px
+
+    &_item
+      display: inline-block
+      margin-right: 70px
+      &:last-child
+        margin: 0
+      *
+        display: inline-block
+
+      &_ball
+        margin: 11px
+        width: 34px
+        height: 34px
+        border: 2px solid rgba(255,255,255,0.3)
+        border-radius: 20px
+        vertical-align: middle
+        line-height: 34px
+
+      &_ball-selected
+        background-color: white
+        border-color: white
+        color: $accentColor

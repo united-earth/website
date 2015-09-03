@@ -20,4 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  landing:
+    prophecy:
+      header: 'There will come a day...'
+      content: '...when people of all races, colors, and creeds will put aside their differences. They will come together in love, joining hands in unification, to heal the Earth and all Her children.'
+      footer: '– From the Navajo-Hopi Prophecy of The Whirling Rainbow'
+
+    roadmap:
+      header: 'An Open-Invitation for Co-creation'
+      content: 'A United Earth extends a planetary invitation to all life-affirming persons and groups for us to unite and collaborate for a whole-systems.'
+      point1: 'Watch Video'
+      point2: 'Learn More'
+      point3: 'Take Survey'

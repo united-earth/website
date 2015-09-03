@@ -1,2 +1,25 @@
-%h1 LandingPage#index
-%p Find me in app/views/landing_page/index.html.haml
+.header
+  .header__shade
+  %video.header__bgvid{autoplay: true, loop: true, poster: image_path('landing_page/bg.jpg'), onclick: "document.getElementById('bgvid').play()"}
+    %source{src: 'bg.m4v', type: 'video/x-m4v'}
+  .header__prophecy
+    .header__prophecy__header= t('landing.prophecy.header')
+    .header__prophecy__content= t('landing.prophecy.content')
+    .header__prophecy__footer= t('landing.prophecy.footer')
+
+  =image_tag 'logo.svg', class: 'header__logo'
+
+.roadmap
+  .roadmap__header= t('landing.roadmap.header')
+  .roadmap__content= t('landing.roadmap.content')
+
+  .roadmap__points
+    .roadmap__points_item
+      .roadmap__points_item_ball.roadmap__points_item_ball-selected 1
+      .roadmap__points_item_text= t('landing.roadmap.point1')
+    .roadmap__points_item
+      .roadmap__points_item_ball 2
+      .roadmap__points_item_text= t('landing.roadmap.point2')
+    .roadmap__points_item
+      .roadmap__points_item_ball 3
+      .roadmap__points_item_text= t('landing.roadmap.point3')
