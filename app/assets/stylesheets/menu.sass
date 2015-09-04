@@ -1,0 +1,40 @@
+.menu
+  position: static
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 90px
+  background-color: white
+  -webkit-transition: height 0.5s
+  transition: height 0.5s
+  overflow: hidden
+
+  &__logo
+    float: left
+    height: 90px
+    svg
+      margin: 16px 0
+      fill: red
+
+  &__list
+    float: right
+    margin: 0
+    list-style: none
+
+    &_item
+      display: inline-block
+      height: 90px
+      line-height: 90px
+      margin-left: 50px
+      box-sizing: border-box
+      a
+        font-size: 18px
+        color: $grey
+        text-decoration: none
+
+      &.active
+        border: 0 solid $accentColor
+        border-bottom-width: 2px
+        a
+          color: $accentColor

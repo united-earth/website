@@ -64,6 +64,9 @@
     transform: translateX(-50%)
     color: white
     z-index: 4
+    -webkit-transition: left 1s, opacity 1s
+    transition: left 1s, opacity 1s
+    opacity: 0
 
 .roadmap
   height: 484px
@@ -107,3 +110,9 @@
         background-color: white
         border-color: white
         color: $accentColor
+
+.hide-header
+  .menu
+    height: 0
+  .header__logo
+    opacity: 1

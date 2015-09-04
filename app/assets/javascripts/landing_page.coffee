@@ -1,3 +1,6 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$(document).ready ()->
+  $('.parallax-container').on 'scroll', (e) ->
+    if this.scrollTop < 650
+      $('body').addClass('hide-header')
+    else
+      $('body').removeClass('hide-header')

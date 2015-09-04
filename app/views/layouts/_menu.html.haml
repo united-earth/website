@@ -1,0 +1,9 @@
+.menu
+  .ue-container
+    .menu__logo= render 'shared/logo'
+
+    %ul.menu__list
+      %li.menu__list_item{ class: ('active' if @at_landing) }= link_to t('menu.landing'), '/'
+      %li.menu__list_item{ class: ('active' if @at_wiki) }= link_to t('menu.wiki'), '/blog'
+      %li.menu__list_item{ class: ('active' if @at_noomap) }= link_to t('menu.noomap'), '/noomap'
+      %li.menu__list_item{ class: ('active' if @at_earthdollar) }= link_to t('menu.earthdollar'), '/earthdollar'
