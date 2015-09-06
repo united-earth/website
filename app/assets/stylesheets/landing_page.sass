@@ -21,20 +21,18 @@
 
   &__shade
     position: absolute
-    top: 100px
     width: 100%
-    height: 620px
+    height: 720px
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.0)),to(rgba(0,0,0,1)))
     z-index: 2
 
   &__bgvid
     position: relative
     max-width: 100%
-    margin: 150px 0
     left: 50%
     background: url(bg.jpg) no-repeat
     background-size: cover
-    transform: translateZ(-2px) scale(4) translateX(-11%)
+    transform: translateZ(-2px) scale(4) translateX(-11%) translateY(-20%)
 
 
   &__prophecy
@@ -116,3 +114,14 @@
     height: 0
   .header__logo
     opacity: 1
+
+.stick-roadmap
+  .submenu
+    display: block
+    background-color: $darkGrey
+    color: white
+    .roadmap__points
+      text-align: center
+      margin-top: 10px
+      margin-left: -22px
+

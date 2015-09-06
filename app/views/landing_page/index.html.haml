@@ -1,7 +1,22 @@
+%link{href: 'http://vjs.zencdn.net/4.12/video-js.css', rel: 'stylesheet'}
+%script{src:'http://vjs.zencdn.net/4.12/video.js'}
+
 = content_for :parallax_background do
   .landing__background
   %video.header__bgvid{autoplay: true, loop: true, poster: image_path('landing_page/bg.jpg'), onclick: "document.getElementById('bgvid').play()"}
     %source{src: 'bg.m4v', type: 'video/x-m4v'}
+
+= content_for :subheader do
+  .roadmap__points
+    .roadmap__points_item
+      .roadmap__points_item_ball.roadmap__points_item_ball-selected 1
+      .roadmap__points_item_text= t('landing.roadmap.point1')
+    .roadmap__points_item
+      .roadmap__points_item_ball 2
+      .roadmap__points_item_text= t('landing.roadmap.point2')
+    .roadmap__points_item
+      .roadmap__points_item_ball 3
+      .roadmap__points_item_text= t('landing.roadmap.point3')
 
 .header
   .header__shade

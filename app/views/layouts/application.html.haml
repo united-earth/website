@@ -8,6 +8,7 @@
     = csrf_meta_tags
   %body{class: ('hide-header' if @at_landing)}
     = render 'layouts/menu'
+    .submenu= yield :subheader
     .parallax-container
       = yield :parallax_background
       .parallax-foreground
