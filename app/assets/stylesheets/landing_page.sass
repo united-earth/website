@@ -32,7 +32,7 @@
     left: 50%
     background: url(bg.jpg) no-repeat
     background-size: cover
-    transform: translateZ(-2px) scale(4) translateX(-11%) translateY(-20%)
+    transform: translateZ(-2px) scale(4) translateX(-11%)
 
 
   &__prophecy
@@ -124,4 +124,76 @@
       text-align: center
       margin-top: 10px
       margin-left: -22px
+
+%landing-subheader
+  font-size: 31px
+  margin: 0px 0 65px 0
+
+.video
+  box-sizing: border-box
+  height: 680px
+  background-color: $lightGrey
+  text-align: center
+  padding: 60px 0
+  .video__header
+    @extend %landing-subheader
+
+  .video__video
+    width: 673px
+    margin: 0 auto
+
+    .vjs-big-play-button
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+
+.learn-more
+  background-color: white
+  padding: 60px 0
+
+  &__header
+    @extend %landing-subheader
+    text-align: center
+
+  &__items
+    position: relative
+    left: 50%
+    transform: translateX(-50%) translateX(160px)
+    max-width: 762px
+    width: 100%
+
+
+    &_item
+      margin-bottom: 70px
+
+      &_header
+        @extend %landing-subheader
+        margin-bottom: 12px
+
+  &__subnavi
+    position: absolute
+    left: 50%
+    transform: translateX(-358px)
+
+    %item
+      width: 88px
+      height: 88px
+      color: $grey
+      border-radius: 44px
+      line-height: 88px
+      text-align: center
+      box-sizing: border-box
+
+    &_1
+      @extend %item
+    &_2
+      @extend %item
+    &_3
+      @extend %item
+
+    &_selected
+      background-color: $accentColor
+      color: white
 

@@ -32,3 +32,22 @@ en:
       point1: 'Watch Video'
       point2: 'Learn More'
       point3: 'Take Survey'
+
+    video:
+      header: 'Why a United Earth?'
+
+    learn-more:
+      subnav:
+        what: 'What'
+        why: 'Why'
+        how: 'How'
+      header: 'Learn more about United Earth'
+      what:
+        header: 'What is United Earth?'
+        content: 'A United Earth extends a planetary invitation to all life-affirming persons and groups for us to unite and collaborate for a whole-systems cultural transformation. This unprecedented, globally inclusive initiative offers a new paradigm platform for each of us to share our knowledge, ideas, visions, solutions, skills, tools, technologies, resources and collective intelligence, to co-create the more beautiful and abundant world we know is possible.'
+      why:
+        header: 'Why do we need this?'
+        content: 'Humanity urgently needs a new story to effectively address the many crises we face: climate change, ecological destruction, overpopulation, political mismanagement, corporate greed, monetary enslavement, media manipulation… The untold empowering and uplifting news is that we already have the ecological solutions, social innovations, alternative political and economic models, and the living examples to solve the World’s problems. We cannot continue to hope, and wait, for politicians to create a just, free, balanced & restorative human culture. Ultimately, the change we seek is entirely in our hands, when we join them together.'
+      how:
+        header: 'How can we achieve it?'
+        content: 'Our intentional unification will send a message to the people of the World that we are putting aside our differences to collectively write a new story… and that we each have a choice to be part of this historic human endeavour through intentional collaboration, using the Internet, and informing each other about tried and tested alternative models and local, community-led solutions.'

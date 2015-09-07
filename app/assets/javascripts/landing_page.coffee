@@ -9,3 +9,22 @@ $(document).ready ()->
       $('body').addClass('stick-roadmap')
     else
       $('body').removeClass('stick-roadmap')
+
+    if this.scrollTop > 2000
+      offset = this.scrollTop - 2000
+      console.log offset
+      subnavi = $('.learn-more__subnavi')
+      console.log subnavi
+      subnavi.css('margin-top', offset + 'px')
+
+    if this.scrollTop < 2150
+      $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
+      $('.learn-more__subnavi_1').addClass('learn-more__subnavi_selected')
+
+    if this.scrollTop > 2150
+      $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
+      $('.learn-more__subnavi_2').addClass('learn-more__subnavi_selected')
+
+    if this.scrollTop > 2300
+      $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
+      $('.learn-more__subnavi_3').addClass('learn-more__subnavi_selected')
