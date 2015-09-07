@@ -151,7 +151,7 @@
 
 .learn-more
   background-color: white
-  padding: 60px 0
+  padding: 60px 0 150px 0
 
   &__header
     @extend %landing-subheader
@@ -195,5 +195,16 @@
 
     &_selected
       background-color: $accentColor
-      color: white
+      color: white !important
 
+.survey
+  padding: 115px
+  background-color: $lightGrey
+  &__header
+    @extend %landing-header
+    text-align: center
+    margin-bottom: 115px
+
+  &__embed
+    margin: 0 auto
+    width: 760px

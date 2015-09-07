@@ -10,7 +10,7 @@ $(document).ready ()->
     else
       $('body').removeClass('stick-roadmap')
 
-    if this.scrollTop > 2000
+    if this.scrollTop > 2000 and this.scrollTop < 2500
       offset = this.scrollTop - 2000
       console.log offset
       subnavi = $('.learn-more__subnavi')
