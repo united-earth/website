@@ -104,9 +104,21 @@
         vertical-align: middle
         line-height: 34px
 
-      &_ball-selected
+    &_item-selected
+      .roadmap__points_item_ball
         background-color: white
         border-color: white
+        color: $accentColor
+
+    &_item-check
+      .roadmap__points_item_ball
+        @extend .icon-check
+        background-color: $accentColor
+        border-color: $accentColor
+        color: white
+        .figure
+          display: none
+      .roadmap__points_item_text
         color: $accentColor
 
 .hide-header
@@ -127,6 +139,7 @@
 %landing-subheader
   font-size: 31px
   margin: 0px 0 65px 0
+
 
 .video
   box-sizing: border-box

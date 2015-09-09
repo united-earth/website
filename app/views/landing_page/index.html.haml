@@ -8,14 +8,17 @@
 
 = content_for :subheader do
   .roadmap__points
-    .roadmap__points_item
-      .roadmap__points_item_ball.roadmap__points_item_ball-selected 1
+    .roadmap__points_item.roadmap__points_item-1.roadmap__points_item-selected
+      .roadmap__points_item_ball
+        .figure 1
       .roadmap__points_item_text= t('landing.roadmap.point1')
-    .roadmap__points_item
-      .roadmap__points_item_ball 2
+    .roadmap__points_item.roadmap__points_item-2
+      .roadmap__points_item_ball
+        .figure 2
       .roadmap__points_item_text= t('landing.roadmap.point2')
-    .roadmap__points_item
-      .roadmap__points_item_ball 3
+    .roadmap__points_item.roadmap__points_item-3
+      .roadmap__points_item_ball
+        .figure 3
       .roadmap__points_item_text= t('landing.roadmap.point3')
 
 .header
@@ -32,8 +35,8 @@
   .roadmap__content= t('landing.roadmap.content')
 
   .roadmap__points
-    .roadmap__points_item
-      .roadmap__points_item_ball.roadmap__points_item_ball-selected 1
+    .roadmap__points_item.roadmap__points_item-selected
+      .roadmap__points_item_ball 1
       .roadmap__points_item_text= t('landing.roadmap.point1')
     .roadmap__points_item
       .roadmap__points_item_ball 2

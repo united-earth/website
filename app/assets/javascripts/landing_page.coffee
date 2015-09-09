@@ -28,3 +28,10 @@ $(document).ready ()->
     if this.scrollTop > 2300
       $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
       $('.learn-more__subnavi_3').addClass('learn-more__subnavi_selected')
+
+    if this.scrollTop > 2200
+      $('.submenu .roadmap__points_item-1').addClass('roadmap__points_item-check')
+      $('.submenu .roadmap__points_item-2').addClass('roadmap__points_item-selected')
+    else
+      $('.submenu .roadmap__points_item-1').removeClass('roadmap__points_item-check')
+      $('.submenu .roadmap__points_item-2').removeClass('roadmap__points_item-selected')
