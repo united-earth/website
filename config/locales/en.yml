@@ -20,6 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  menu:
+    landing: 'Home'
+    un-application: 'UN application'
+    noom: 'Noomap'
+    earthdollar: 'Earth Dollar'
   landing:
     prophecy:
       header: 'There will come a day...'
