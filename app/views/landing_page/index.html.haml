@@ -70,5 +70,6 @@
 
 .survey
   .survey__header=t('landing.survey.header')
-  .survey__embed
+  .survey__intro.col-sm-2=t('landing.survey.intro')
+  .survey__embed.col-sm-10
     %iframe#survey-iframe.iframe-sizing{src: 'https://docs.google.com/forms/d/1YbQ1RjpsOifaz5IMOWnmHNQ9lVXRXTlACC0CmkiqCUQ/viewform?embedded=true', width: '760', height: '800', frameborder: '0', marginheight:'0', marginwidth:'0'}Loading...

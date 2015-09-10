@@ -34,9 +34,9 @@ en:
     roadmap:
       header: 'An Open-Invitation for Co-creation'
       content: 'A United Earth extends a planetary invitation to all life-affirming persons and groups for us to unite and collaborate for a whole-systems.'
-      point1: 'Watch Video'
-      point2: 'Learn More'
-      point3: 'Take Survey'
+      point1: 'Watch Intro'
+      point2: 'Tell us'
+      point3: 'Get involved'
 
     video:
       header: 'Why a United Earth?'
@@ -58,4 +58,5 @@ en:
         content: 'Our intentional unification will send a message to the people of the World that we are putting aside our differences to collectively write a new story… and that we each have a choice to be part of this historic human endeavour through intentional collaboration, using the Internet, and informing each other about tried and tested alternative models and local, community-led solutions.'
 
     survey:
-      header: 'Give us Feedback, take the survey!'
+      header: 'Raise your voice, give us feedback!'
+      intro: 'To help unify our vast and diverse Human Family each of us is called to contribute in our own unique way. Please add your voice through the feedback form so a United Earth can benefit from your ideas, skills and experience. We look forward to having you on board!  Welcome to the laboratory of existence, the place where the future is now!'
