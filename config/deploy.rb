@@ -36,6 +36,29 @@ set :repo_url, 'https://github.com/united-earth/website.git'
 
 namespace :deploy do
 
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      execute "mkdir -p #{release_path.join('tmp')}"
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
+
+  after :publishing, :restart
+
+
+
+  desc 'Warm up the application by pinging it, so enduser wont have to wait'
+  task :ping do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "curl -s -D - #{fetch(:ping_url)} -o /dev/null"
+    end
+  end
+
+  after :restart, :ping
+
+
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:

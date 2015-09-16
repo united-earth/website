@@ -5,6 +5,8 @@
 
 server 'united-earth.vision', user: 'united-earth', roles: %w{app db web}, my_property: :my_value
 set :deploy_to, '/home/united-earth/staging'
+
+set :ping_url, 'http://staging.united-earth.vision'
 set :linked_files, fetch(:linked_files, []).push('.env.staging')
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
