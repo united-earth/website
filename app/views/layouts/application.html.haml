@@ -12,4 +12,6 @@
     .parallax-container
       = yield :parallax_background
       .parallax-foreground
+        %p.notice= notice
+        %p.alert= alert
         = yield
