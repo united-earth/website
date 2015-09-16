@@ -61,6 +61,7 @@ en:
         content2: 'Due to the magnitude of this vision, we foresee this snowball of global unity beginning with people and groups who a) recognise the potential and possibilities of our intentional unification, and b) are willing and able to put aside our ideological differences for the greater good of all.'
         content3: 'Unified collaboration at the scale United Earth is inviting will undoubtedly attract global mainstream attention to the wealth of existing intelligent and alternative models and solutions so we can create the more beautiful and abundant world we know is possible. Ultimately, unity and our collective Global Transition is a choice that every one of us needs to make.'
 
-    survey:
-      header: 'Raise your voice, give us feedback!'
-      intro: 'To help unify our vast and diverse Human Family each of us is called to contribute in our own unique way. Please add your voice through the feedback form so a United Earth can benefit from your ideas, skills and experience. We look forward to having you on board!  Welcome to the laboratory of existence, the place where the future is now!'
+    signup:
+      header: 'Your Call to Action:'
+      intro: "Everyone is invited to co-create! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
+      signup-button: 'Join the new paradigm!'

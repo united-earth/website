@@ -201,17 +201,31 @@
         background-color: $accentColor
         color: white !important
 
-  .survey
-    padding: 115px
+  .signup
+    padding: 50px
     background-color: $landingGrey
     &__header
       @extend %landing-header
       text-align: center
       margin-bottom: 115px
 
-    &__embed
-      margin: 60px auto
-      width: 760px
+    &__button
+      display: block
+      margin: 40px auto
+      border-radius: 4px
+      width: 250px
+      height: 50px
+      background-color: $accentColor
+      text-align: center
+      line-height: 50px
+      color: white
+      text-transform: uppercase
+      cursor: pointer
+      &:hover
+        color: white
+        text-decoration: none
+
+
 
 
 .hide-header
