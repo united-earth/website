@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/bkeepers/dotenv.git
+  revision: e13bf8a877e2237b1c91c66c775f88bbcaafe314
+  specs:
+    dotenv (2.0.2)
+    dotenv-rails (2.0.2)
+      dotenv (= 2.0.2)
+      railties (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -174,6 +183,7 @@ DEPENDENCIES
   byebug
   capistrano (~> 3.4.0)
   coffee-rails (~> 4.1.0)
+  dotenv-rails!
   haml-rails (~> 0.9)
   http_accept_language
   jbuilder (~> 2.0)
