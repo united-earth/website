@@ -20,56 +20,56 @@
       .roadmap__points_item_ball
         .figure 3
       .roadmap__points_item_text= t('landing.roadmap.point3')
+.landing
+  .header
+    .header__shade
+    .header__prophecy
+      .header__prophecy__header= t('landing.prophecy.header')
+      .header__prophecy__content= t('landing.prophecy.content')
+      .header__prophecy__footer= t('landing.prophecy.footer')
 
-.header
-  .header__shade
-  .header__prophecy
-    .header__prophecy__header= t('landing.prophecy.header')
-    .header__prophecy__content= t('landing.prophecy.content')
-    .header__prophecy__footer= t('landing.prophecy.footer')
+    =image_tag 'logo.svg', class: 'header__logo'
 
-  =image_tag 'logo.svg', class: 'header__logo'
+  .roadmap
+    .roadmap__header= t('landing.roadmap.header')
+    .roadmap__content= t('landing.roadmap.content')
 
-.roadmap
-  .roadmap__header= t('landing.roadmap.header')
-  .roadmap__content= t('landing.roadmap.content')
+    .roadmap__points
+      .roadmap__points_item.roadmap__points_item-selected
+        .roadmap__points_item_ball 1
+        .roadmap__points_item_text= t('landing.roadmap.point1')
+      .roadmap__points_item
+        .roadmap__points_item_ball 2
+        .roadmap__points_item_text= t('landing.roadmap.point2')
+      .roadmap__points_item
+        .roadmap__points_item_ball 3
+        .roadmap__points_item_text= t('landing.roadmap.point3')
 
-  .roadmap__points
-    .roadmap__points_item.roadmap__points_item-selected
-      .roadmap__points_item_ball 1
-      .roadmap__points_item_text= t('landing.roadmap.point1')
-    .roadmap__points_item
-      .roadmap__points_item_ball 2
-      .roadmap__points_item_text= t('landing.roadmap.point2')
-    .roadmap__points_item
-      .roadmap__points_item_ball 3
-      .roadmap__points_item_text= t('landing.roadmap.point3')
+  .video
+    .video__header= t('landing.video.header')
+    .video__video
+      %video#intro-video{controls:true, preload: 'none', 'data-setup'=>'{}', poster: image_path('landing_page/video-poster.jpg'), class: 'video-js vjs-default-skin', width: '673px', height:'374px'}
+        %source{src: 'intro.mp4', type: 'video/mp4'}
 
-.video
-  .video__header= t('landing.video.header')
-  .video__video
-    %video#intro-video{controls:true, preload: 'none', 'data-setup'=>'{}', poster: image_path('landing_page/video-poster.jpg'), class: 'video-js vjs-default-skin', width: '673px', height:'374px'}
-      %source{src: 'intro.mp4', type: 'video/mp4'}
+  .learn-more
+    .learn-more__header=t('landing.learn-more.header')
+    .learn-more__subnavi
+      .learn-more__subnavi_1.learn-more__subnavi_selected=t('landing.learn-more.subnav.what')
+      .learn-more__subnavi_2=t('landing.learn-more.subnav.why')
+      .learn-more__subnavi_3=t('landing.learn-more.subnav.how')
+    .learn-more__items
+      .learn-more__items_item
+        .learn-more__items_item_header=t('landing.learn-more.what.header')
+        .learn-more__items_item_content=t('landing.learn-more.what.content')
+      .learn-more__items_item
+        .learn-more__items_item_header=t('landing.learn-more.why.header')
+        .learn-more__items_item_content=t('landing.learn-more.why.content')
+      .learn-more__items_item
+        .learn-more__items_item_header=t('landing.learn-more.how.header')
+        .learn-more__items_item_content=t('landing.learn-more.how.content')
 
-.learn-more
-  .learn-more__header=t('landing.learn-more.header')
-  .learn-more__subnavi
-    .learn-more__subnavi_1.learn-more__subnavi_selected=t('landing.learn-more.subnav.what')
-    .learn-more__subnavi_2=t('landing.learn-more.subnav.why')
-    .learn-more__subnavi_3=t('landing.learn-more.subnav.how')
-  .learn-more__items
-    .learn-more__items_item
-      .learn-more__items_item_header=t('landing.learn-more.what.header')
-      .learn-more__items_item_content=t('landing.learn-more.what.content')
-    .learn-more__items_item
-      .learn-more__items_item_header=t('landing.learn-more.why.header')
-      .learn-more__items_item_content=t('landing.learn-more.why.content')
-    .learn-more__items_item
-      .learn-more__items_item_header=t('landing.learn-more.how.header')
-      .learn-more__items_item_content=t('landing.learn-more.how.content')
-
-.survey
-  .survey__header=t('landing.survey.header')
-  .survey__intro.col-sm-2=t('landing.survey.intro')
-  .survey__embed.col-sm-10
-    %iframe#survey-iframe.iframe-sizing{src: 'https://docs.google.com/forms/d/1YbQ1RjpsOifaz5IMOWnmHNQ9lVXRXTlACC0CmkiqCUQ/viewform?embedded=true', width: '760', height: '800', frameborder: '0', marginheight:'0', marginwidth:'0'}Loading...
+  .survey
+    .survey__header=t('landing.survey.header')
+    .survey__intro.col-sm-2=t('landing.survey.intro')
+    .survey__embed.col-sm-10
+      %iframe#survey-iframe.iframe-sizing{src: 'https://docs.google.com/forms/d/1YbQ1RjpsOifaz5IMOWnmHNQ9lVXRXTlACC0CmkiqCUQ/viewform?embedded=true', width: '760', height: '800', frameborder: '0', marginheight:'0', marginwidth:'0'}Loading...
