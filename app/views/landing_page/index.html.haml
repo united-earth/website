@@ -72,8 +72,8 @@
         .learn-more__items_item_content=t('landing.learn-more.how.content2')
         .learn-more__items_item_content=t('landing.learn-more.how.content3')
 
-  .signup
-    .signup__header=t('landing.signup.header')
-    .signup__intro=raw t('landing.signup.intro')
+  .landing__signup
+    .landing__signup__header=t('landing.signup.header')
+    .landing__signup__intro=raw t('landing.signup.intro')
 
-    = link_to t('landing.signup.signup-button'), new_user_registration_path, class: 'signup__button'
+    = link_to t('landing.signup.signup-button'), new_user_registration_path, class: 'landing__signup__button'
