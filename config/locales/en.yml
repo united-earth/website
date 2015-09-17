@@ -69,7 +69,32 @@ en:
   signup:
     header: 'Join United Earth'
 
+  user_settings:
+    contribution: 'Would you like to actively contribute to United Earth? By ticking a box you agree to be contacted by a team facilitator'
+
   activerecord:
       attributes:
         user:
           email: 'Email Addres'
+        personal_info:
+          add_voice: 'Add your voice to the counter'
+          newsletter: 'Subscribe to the United Earth newsletter'
+          public_feedback: 'Your public feedback for our landing page:'
+
+          contrib_admin: 'Administration'
+          contrib_coord: 'Coordination'
+          contrib_writing: 'Visioning / Writing'
+          contrib_translations: 'Translations'
+          contrib_webdev: 'Web development'
+          contrib_design: 'Graphic design'
+          contrib_dev: 'Software development & programming'
+          contrib_avprod: 'Audio-visual production & editing'
+          contrib_communication: 'Communications, media & public relations'
+          contrib_networking: 'Networking / Promotion'
+          contrib_education: 'Education'
+          contrib_art: 'Artistic expression'
+          contrib_management: 'Task management'
+          contrib_fundraising: 'Fundraising'
+          contrib_funding: 'Funding'
+          contrib_other: 'Other'
+          expertise: 'Special expertise:'

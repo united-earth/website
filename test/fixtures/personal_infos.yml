@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  add_voice: false
+  newsletter: 
+  public_feedback: MyText
+  contrib_admin: false
+  contrib_coord: false
+  contrib_writing: false
+  contrib_translations: false
+  contrib_webdev: false
+  contrib_design: false
+  contrib_dev: false
+  contrib_avprod: false
+  contrib_communication: false
+  contrib_networking: false
+  contrib_education: false
+  contrib_art: false
+  contrib_management: false
+  contrib_fundraising: false
+  contrib_funding: false
+  contrib_other: MyString
+  expertise: MyString
+
+two:
+  add_voice: false
+  newsletter: 
+  public_feedback: MyText
+  contrib_admin: false
+  contrib_coord: false
+  contrib_writing: false
+  contrib_translations: false
+  contrib_webdev: false
+  contrib_design: false
+  contrib_dev: false
+  contrib_avprod: false
+  contrib_communication: false
+  contrib_networking: false
+  contrib_education: false
+  contrib_art: false
+  contrib_management: false
+  contrib_fundraising: false
+  contrib_funding: false
+  contrib_other: MyString
+  expertise: MyString
