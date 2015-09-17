@@ -26,6 +26,7 @@ staging:
   database: ue_staging
   username: ue_staging
   password: H4aHvXOa54
+  host: localhost
 
 production:
   <<: *default
