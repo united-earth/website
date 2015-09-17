@@ -21,9 +21,11 @@ test:
   <<: *default
   database: united-earth_test
 
-production:
+staging:
   <<: *default
-  database: united-earth_staging
+  database: ue_staging
+  username: ue_staging
+  password: H4aHvXOa54
 
 production:
   <<: *default
