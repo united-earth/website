@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916231807) do
+ActiveRecord::Schema.define(version: 20150918234018) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "personal_infos", force: :cascade do |t|
-    t.boolean  "add_voice"
-    t.boolean  "newsletter"
+    t.boolean  "add_voice",             default: true
+    t.boolean  "newsletter",            default: true
     t.text     "public_feedback"
     t.boolean  "contrib_admin"
     t.boolean  "contrib_coord"
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 20150916231807) do
     t.string   "contrib_other"
     t.string   "expertise"
     t.integer  "user_id"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
   create_table "users", force: :cascade do |t|
