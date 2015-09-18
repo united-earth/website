@@ -1,5 +1,6 @@
 $(document).on 'ready page:load', () ->
   if $('.landing').size() > 0
+    $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
       if this.scrollTop < 600
         $('body').addClass('hide-header')
