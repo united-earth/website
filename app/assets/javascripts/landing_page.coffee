@@ -1,4 +1,5 @@
 $(document).on 'ready page:load', () ->
+  loggedIn = ($('body').attr('data-logged-in') != undefined)
   if $('.landing').size() > 0
     $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
@@ -45,4 +46,7 @@ $(document).on 'ready page:load', () ->
       else
         $('.submenu .roadmap__points_item-2').removeClass('roadmap__points_item-check')
         $('.submenu .roadmap__points_item-3').removeClass('roadmap__points_item-selected')
+
+      if loggedIn
+        $('.roadmap__points *').addClass('roadmap__points_item-check')
 
