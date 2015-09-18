@@ -1,6 +1,6 @@
 .menu
   .ue-container
-    .menu__logo= render 'shared/logo'
+    .menu__logo= image_tag 'logo_black.svg' #render 'shared/logo'
 
     %ul.menu__list
       %li.menu__list_item{ class: ('active' if @at_landing) }= link_to t('menu.landing'), landing_page_path
