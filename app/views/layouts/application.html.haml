@@ -12,6 +12,9 @@
     .parallax-container
       = yield :parallax_background
       .parallax-foreground
-        %p.notice= notice
-        %p.alert= alert
+        .ue-container
+          %p.notice= notice
+          %p.alert= alert
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class: name
         = yield

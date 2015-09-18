@@ -75,11 +75,17 @@ en:
 
   user_settings:
     contribution: 'Would you like to actively contribute to United Earth? By ticking a box you agree to be contacted by a team facilitator'
+    update_user:
+      success: 'User info updated!'
+    update_personal_info:
+      success: 'Personal info updated!'
 
   activerecord:
       attributes:
         user:
-          email: 'Email Addres'
+          firstname: 'First name:'
+          lastname: 'Last name:'
+          email: 'Email Address:'
         personal_info:
           add_voice: 'Add your voice to the counter'
           newsletter: 'Subscribe to the United Earth newsletter'

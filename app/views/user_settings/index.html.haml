@@ -1,6 +1,6 @@
-.user_settings
-  %h1 Personal Info
-  = form_for current_user do |f|
+.user-settings.ue-container
+  .user-settings_header Personal Info
+  = form_for current_user, {url: user_update_path, method: :post} do |f|
     .line
       = f.label :firstname
       = f.text_field :firstname
@@ -10,8 +10,9 @@
     .line
       = f.label :email
       = current_user.email
+    = f.submit
   %hr
-  = form_for current_user.personal_info, url: personal_info_path(locale: I18n.locale) do |f|
+  = form_for current_user.personal_info, url: personal_info_path(locale: I18n.locale), method: :post do |f|
     .line
       = f.check_box :add_voice
       = f.label :add_voice
@@ -73,3 +74,4 @@
     .line
       = f.label :expertise
       = f.text_field :expertise
+    = f.submit

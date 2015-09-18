@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     root 'landing_page#index',                                as: :landing_page
     get 'un-application'              => 'landing_page#un_application',         as: :un_application
     get 'settings'                    => 'user_settings#index',                 as: :user_settings
+    post 'settings/user'              => 'user_settings#update_user',           as: :user_update
     post 'settings/personal_info'     => 'user_settings#update_personal_info',  as: :personal_info
   end
 
