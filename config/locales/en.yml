@@ -28,13 +28,13 @@ en:
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
-      header: 'There will come a day...'
-      content: '...when people of all races, colors, and creeds will put aside their differences. They will come together in love, joining hands in unification, to heal the Earth and all Her children.'
+      header: ''
+      content: '<b>There will come a day</b> when people of all races, colors, and creeds<br> will put aside their differences.<br> <b>They will come together</b> in love, joining hands in unification,<br> to heal the Earth and all Her children.'
       footer: '– From the Navajo-Hopi Prophecy of The Whirling Rainbow'
 
     roadmap:
-      header: 'An Open-Invitation for Co-creation'
-      content: 'A United Earth extends a planetary invitation to all life-affirming persons and groups for us to unite and collaborate for a whole-systems.'
+      header: 'An Open Invitation for Co-creation'
+      content: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.'
       point1: 'Watch Intro'
       point2: 'What/Why/How'
       point3: 'Sign Up/Get Involved'

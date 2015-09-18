@@ -24,8 +24,7 @@
   .header
     .header__shade
     .header__prophecy
-      .header__prophecy__header= t('landing.prophecy.header')
-      .header__prophecy__content= t('landing.prophecy.content')
+      .header__prophecy__content= raw t('landing.prophecy.content')
       .header__prophecy__footer= t('landing.prophecy.footer')
 
     =image_tag 'logo_gray_gold.svg', class: 'header__logo'
