@@ -25,6 +25,9 @@ en:
     un-application: 'UN application'
     noom: 'Noomap'
     earthdollar: 'Earth Dollar'
+
+    logout: 'Log out'
+    settings: 'My info'
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:

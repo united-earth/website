@@ -39,6 +39,30 @@
         border-bottom-width: 2px
         a
           color: $accentColor
+
+  &__session
+
+
+    &_logout, &_settings
+      position: absolute
+      right: 5px
+      color: $grey
+      margin-left: 5px
+      text-decoration: none
+      font-size: 10px
+
+
+    &_logout
+      top: 3px
+
+    &_settings
+      top: 3px
+      right: 45px
+      &:before
+        margin-right: 3px
+
+
+
 .submenu
   position: fixed
   display: none
