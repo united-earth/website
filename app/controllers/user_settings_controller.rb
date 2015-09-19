@@ -20,14 +20,12 @@ class UserSettingsController < ApplicationController
 
   def update_user
     current_user.update user_params
-    flash[:success] = t('.success')
-    render :index
+    redirect_to user_settings_path, notice: t('.success')
   end
 
   def update_personal_info
     current_user.personal_info.update person_info_params
-    flash[:success] = t('.success')
-    render :index
+    redirect_to user_settings_path, notice: t('.success')
   end
 
   def edit_group
