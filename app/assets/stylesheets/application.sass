@@ -44,6 +44,8 @@
 
 %button
   border-radius: 4px
+  margin: 6px 0
+  padding: 5px 10px
   text-align: center
   color: white
   text-transform: uppercase
@@ -60,6 +62,11 @@
   height: 50px
   line-height: 50px
   background-color: $accentColor
+
+input[type=submit]
+  @extend %button
+  border: none
+  background-color: $blue
 
 body
   @extend %fontRegular
