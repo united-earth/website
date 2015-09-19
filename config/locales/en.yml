@@ -83,6 +83,10 @@ en:
     group:
       new:
         header: 'Creating a new group...'
+    personal_info_button: 'Personal info for co-creation'
+    groups:
+      header1: 'Your group:'
+      header2: 'Your groups:'
 
   activerecord:
       attributes:

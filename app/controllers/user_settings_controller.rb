@@ -8,6 +8,7 @@ class UserSettingsController < ApplicationController
 
   def create_group
     @group = Group.new(group_params)
+    @group.user = current_user
 
     if @group.save
       redirect_to user_settings_path, notice: 'Group was successfully created.'

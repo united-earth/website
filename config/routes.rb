@@ -12,7 +12,8 @@ Rails.application.routes.draw do
     get 'un-application'              => 'landing_page#un_application',         as: :un_application
     get 'settings'                    => 'user_settings#index',                 as: :user_settings
     post 'settings/user'              => 'user_settings#update_user',           as: :user_update
-    post 'settings/personal_info'     => 'user_settings#update_personal_info',  as: :personal_info
+    get 'settings/personal_info'     => 'user_settings#personal_info',          as: :personal_info
+    post 'settings/personal_info'     => 'user_settings#update_personal_info',  as: :update_personal_info
     get 'settings/new_group'          => 'user_settings#new_group',             as: :new_group
     post 'settings/new_group'         => 'user_settings#create_group',          as: :create_group
   end

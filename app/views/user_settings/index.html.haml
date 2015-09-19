@@ -1,5 +1,5 @@
 .user-settings.ue-container
-  .user-settings_header Personal Info
+  .user-settings_header User settings
   = form_for current_user, {url: user_update_path, method: :post} do |f|
     .line
       = f.label :firstname
@@ -11,69 +11,36 @@
       = f.label :email
       = current_user.email
     = f.submit
-  %hr
-  = form_for current_user.personal_info, url: personal_info_path(locale: I18n.locale), method: :post do |f|
-    .line
-      = f.check_box :add_voice
-      = f.label :add_voice
-    .line
-      = f.check_box :newsletter
-      = f.label :newsletter
-    .line
-      = f.label :public_feedback
-      = f.text_area :public_feedback
-    %h2= t('user_settings.contribution')
-    .line
-      = f.check_box :contrib_admin
-      = f.label :contrib_admin
-    .line
-      = f.check_box :contrib_coord
-      = f.label :contrib_coord
-    .line
-      = f.check_box :contrib_writing
-      = f.label :contrib_writing
-    .line
-      = f.check_box :contrib_translations
-      = f.label :contrib_translations
-    .line
-      = f.check_box :contrib_webdev
-      = f.label :contrib_webdev
-    .line
-      = f.check_box :contrib_design
-      = f.label :contrib_design
-    .line
-      = f.check_box :contrib_dev
-      = f.label :contrib_dev
-    .line
-      = f.check_box :contrib_avprod
-      = f.label :contrib_avprod
-    .line
-      = f.check_box :contrib_communication
-      = f.label :contrib_communication
-    .line
-      = f.check_box :contrib_networking
-      = f.label :contrib_networking
-    .line
-      = f.check_box :contrib_education
-      = f.label :contrib_education
-    .line
-      = f.check_box :contrib_art
-      = f.label :contrib_art
-    .line
-      = f.check_box :contrib_management
-      = f.label :contrib_management
-    .line
-      = f.check_box :contrib_fundraising
-      = f.label :contrib_fundraising
-    .line
-      = f.check_box :contrib_funding
-      = f.label :contrib_funding
-    .line
-      = f.label :contrib_other
-      = f.text_field :contrib_other
-    .line
-      = f.label :expertise
-      = f.text_field :expertise
-    = f.submit
 
-  =link_to t('user_settings.new_group_button'), new_group_path, class: 'accent-button'
+
+
+  %hr
+
+  .col-sm-6.user-settings__personal
+    =link_to t('user_settings.personal_info_button'), personal_info_path, class: 'user-settings__info-button'
+    = form_for current_user.personal_info, url: update_personal_info_path(locale: I18n.locale), method: :post do |f|
+      .line
+        = f.check_box :add_voice
+        = f.label :add_voice
+      .line
+        = f.check_box :newsletter
+        = f.label :newsletter
+      .line
+        = f.label :public_feedback
+        = f.text_area :public_feedback
+      = f.submit
+  .col-sm-6.user-settings__group
+    =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
+    - if current_user.groups.size == 1
+      .user-settings__group_list-header= t('user_settings.groups.header1')
+    - if current_user.groups.size > 1
+      .user-settings__group_list-header= t('user_settings.groups.header2')
+    .user-settings__group_list
+      - current_user.groups.each do |group|
+        .user-settings__group_list_item
+          .user-settings__group_list_item_name= group.name
+
+
+
+
+
