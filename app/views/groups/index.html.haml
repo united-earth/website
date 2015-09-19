@@ -1,0 +1,55 @@
+%h1 Listing groups
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Contact name
+      %th Contact email
+      %th Country
+      %th Website
+      %th Logo
+      %th Cat ecological
+      %th Cat environment
+      %th Cat indi
+      %th Cat social
+      %th Cat economics
+      %th Cat political
+      %th Cat animal
+      %th Cat activism
+      %th Cat tech
+      %th Cat holistic
+      %th Cat conscious
+      %th Comment
+      %th
+      %th
+      %th
+
+  %tbody
+    - @groups.each do |group|
+      %tr
+        %td= group.name
+        %td= group.contact_name
+        %td= group.contact_email
+        %td= group.country
+        %td= group.website
+        %td= group.logo
+        %td= group.cat_ecological
+        %td= group.cat_environment
+        %td= group.cat_indi
+        %td= group.cat_social
+        %td= group.cat_economics
+        %td= group.cat_political
+        %td= group.cat_animal
+        %td= group.cat_activism
+        %td= group.cat_tech
+        %td= group.cat_holistic
+        %td= group.cat_conscious
+        %td= group.comment
+        %td= link_to 'Show', group
+        %td= link_to 'Edit', edit_group_path(group)
+        %td= link_to 'Destroy', group, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Group', new_group_path

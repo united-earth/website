@@ -1,0 +1,60 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @group.name
+%p
+  %b Contact name:
+  = @group.contact_name
+%p
+  %b Contact email:
+  = @group.contact_email
+%p
+  %b Country:
+  = @group.country
+%p
+  %b Website:
+  = @group.website
+%p
+  %b Logo:
+  = @group.logo
+%p
+  %b Cat ecological:
+  = @group.cat_ecological
+%p
+  %b Cat environment:
+  = @group.cat_environment
+%p
+  %b Cat indi:
+  = @group.cat_indi
+%p
+  %b Cat social:
+  = @group.cat_social
+%p
+  %b Cat economics:
+  = @group.cat_economics
+%p
+  %b Cat political:
+  = @group.cat_political
+%p
+  %b Cat animal:
+  = @group.cat_animal
+%p
+  %b Cat activism:
+  = @group.cat_activism
+%p
+  %b Cat tech:
+  = @group.cat_tech
+%p
+  %b Cat holistic:
+  = @group.cat_holistic
+%p
+  %b Cat conscious:
+  = @group.cat_conscious
+%p
+  %b Comment:
+  = @group.comment
+
+= link_to 'Edit', edit_group_path(@group)
+\|
+= link_to 'Back', groups_path

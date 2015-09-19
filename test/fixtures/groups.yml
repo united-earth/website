@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  contact_name: MyString
+  contact_email: MyString
+  country: MyString
+  website: MyString
+  logo: MyString
+  cat_ecological: false
+  cat_environment: false
+  cat_indi: false
+  cat_social: false
+  cat_economics: false
+  cat_political: false
+  cat_animal: false
+  cat_activism: false
+  cat_tech: false
+  cat_holistic: false
+  cat_conscious: false
+  comment: MyText
+
+two:
+  name: MyString
+  contact_name: MyString
+  contact_email: MyString
+  country: MyString
+  website: MyString
+  logo: MyString
+  cat_ecological: false
+  cat_environment: false
+  cat_indi: false
+  cat_social: false
+  cat_economics: false
+  cat_political: false
+  cat_animal: false
+  cat_activism: false
+  cat_tech: false
+  cat_holistic: false
+  cat_conscious: false
+  comment: MyText

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   scope "admin" do
     resources :users
+    resources :groups
   end
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/, path_prefix: "/:locale" do

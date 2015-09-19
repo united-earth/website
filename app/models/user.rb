@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :personal_info
+  has_many :groups
   before_create :build_personal_info
 
 end

@@ -1,0 +1,64 @@
+= form_for @group do |f|
+  - if @group.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@group.errors.count, "error")} prohibited this group from being saved:"
+      %ul
+        - @group.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :contact_name
+    = f.text_field :contact_name
+  .field
+    = f.label :contact_email
+    = f.text_field :contact_email
+  .field
+    = f.label :country
+    = f.text_field :country
+  .field
+    = f.label :website
+    = f.text_field :website
+  .field
+    = f.label :logo
+    = f.text_field :logo
+  .field
+    = f.label :cat_ecological
+    = f.check_box :cat_ecological
+  .field
+    = f.label :cat_environment
+    = f.check_box :cat_environment
+  .field
+    = f.label :cat_indi
+    = f.check_box :cat_indi
+  .field
+    = f.label :cat_social
+    = f.check_box :cat_social
+  .field
+    = f.label :cat_economics
+    = f.check_box :cat_economics
+  .field
+    = f.label :cat_political
+    = f.check_box :cat_political
+  .field
+    = f.label :cat_animal
+    = f.check_box :cat_animal
+  .field
+    = f.label :cat_activism
+    = f.check_box :cat_activism
+  .field
+    = f.label :cat_tech
+    = f.check_box :cat_tech
+  .field
+    = f.label :cat_holistic
+    = f.check_box :cat_holistic
+  .field
+    = f.label :cat_conscious
+    = f.check_box :cat_conscious
+  .field
+    = f.label :comment
+    = f.text_area :comment
+  .actions
+    = f.submit 'Save'
