@@ -1,5 +1,6 @@
 class UserSettingsController < ApplicationController
   def index
+    @groups = current_user.groups.active
   end
 
   def new_group
@@ -27,6 +28,28 @@ class UserSettingsController < ApplicationController
     current_user.personal_info.update person_info_params
     flash[:success] = t('.success')
     render :index
+  end
+
+  def edit_group
+    @group = current_user.groups.find params[:id]
+  end
+
+  def update_group
+    @group = current_user.groups.find params[:id]
+    if @group.update group_params
+      redirect_to user_settings_path, notice: 'Group was successfully updated.'
+    end
+  end
+
+  def remove_group
+    @group = current_user.groups.find params[:id]
+    if @group
+      @group.deleted = true
+      @group.save!
+      redirect_to user_settings_path, notice: 'Group was successfully updated.'
+    else
+      redirect_to user_settings_path, error: 'Group not found.'
+    end
   end
 
   private

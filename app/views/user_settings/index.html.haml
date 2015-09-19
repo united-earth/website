@@ -31,14 +31,21 @@
       = f.submit
   .col-sm-6.user-settings__group
     =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
-    - if current_user.groups.size == 1
+    - if @groups.size == 1
       .user-settings__group_list-header= t('user_settings.groups.header1')
-    - if current_user.groups.size > 1
+    - if @groups.size > 1
       .user-settings__group_list-header= t('user_settings.groups.header2')
     .user-settings__group_list
-      - current_user.groups.each do |group|
+      - @groups.each do |group|
         .user-settings__group_list_item
-          .user-settings__group_list_item_name= group.name
+          .user-settings__group_list_item_name= link_to group.name, user_edit_group_path(group, locale: I18n.locale)
+          =link_to t('user_settings.groups.edit-button'), user_edit_group_path(group, locale: I18n.locale), class: 'user-settings__group_list_item_edit'
+          =link_to t('user_settings.groups.delete-button'),
+            user_remove_group_path(group, locale: I18n.locale),
+            class: 'user-settings__group_list_item_delete',
+            method: :patch,
+            data: {confirm: t('user_settings.groups.confirm-delete', group_name: group.name)}
+
 
 
 

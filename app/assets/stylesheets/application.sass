@@ -36,16 +36,15 @@
   margin: 0 auto
 
 .success
+  margin: 20px 0
   color: $green
+.notice
+  margin: 20px 0
+  color: $accentColor
 
-.accent-button
-  display: block
+%button
   border-radius: 4px
-  width: 250px
-  height: 50px
-  background-color: $accentColor
   text-align: center
-  line-height: 50px
   color: white
   text-transform: uppercase
   cursor: pointer
@@ -53,6 +52,14 @@
   &:hover
     color: white
     text-decoration: none
+
+.accent-button
+  @extend %button
+  display: block
+  width: 250px
+  height: 50px
+  line-height: 50px
+  background-color: $accentColor
 
 body
   @extend %fontRegular

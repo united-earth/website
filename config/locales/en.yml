@@ -87,6 +87,9 @@ en:
     groups:
       header1: 'Your group:'
       header2: 'Your groups:'
+      delete-button: 'Remove'
+      edit-button: 'Edit'
+      confirm-delete: 'Really delete group %{group_name}?'
 
   activerecord:
       attributes:
