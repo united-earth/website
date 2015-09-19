@@ -7,5 +7,6 @@ class User < ActiveRecord::Base
   has_one :personal_info
   has_many :groups
   before_create :build_personal_info
+  mount_uploader :avatar, ImageUploader
 
 end

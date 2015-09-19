@@ -1,17 +1,27 @@
 .user-settings.ue-container
-  .user-settings_header User settings
-  = form_for current_user, {url: user_update_path, method: :post} do |f|
-    .line
-      = f.label :firstname
-      = f.text_field :firstname
-    .line
-      = f.label :lastname
-      = f.text_field :lastname
-    .line
-      = f.label :email
-      = current_user.email
-    = f.submit
+  .user-settings__user
+    .user-settings__user_header User settings
+    .col-sm-6
+      .user-settings__user_basic
+        = form_for current_user, {url: user_update_path, method: :post} do |f|
+          .line
+            = f.label :firstname
+            = f.text_field :firstname
+          .line
+            = f.label :lastname
+            = f.text_field :lastname
+          .line
+            = f.label :email
+            = current_user.email
+          = f.submit
 
+    .col-sm-6
+      .user-settings__user_avatar
+        - if current_user.avatar.size > 0
+          = image_tag current_user.avatar.profile.url
+        = simple_form_for current_user, {url: user_update_path, method: :post} do |f|
+          = f.file_field :avatar
+          =f.submit 'change avatar'
 
 
   %hr
