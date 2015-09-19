@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   scope "admin" do
     resources :users
-    resources :groups
+    resources :groups, except: [:new, :create]
   end
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/, path_prefix: "/:locale" do
@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get 'settings'                    => 'user_settings#index',                 as: :user_settings
     post 'settings/user'              => 'user_settings#update_user',           as: :user_update
     post 'settings/personal_info'     => 'user_settings#update_personal_info',  as: :personal_info
+    get 'settings/new_group'          => 'user_settings#new_group',             as: :new_group
+    post 'settings/new_group'         => 'user_settings#create_group',          as: :create_group
   end
 
   root to: 'landing_page#locale_redirect'

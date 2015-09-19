@@ -79,6 +79,10 @@ en:
       success: 'User info updated!'
     update_personal_info:
       success: 'Personal info updated!'
+    new_group_button: 'Create group'
+    group:
+      new:
+        header: 'Creating a new group...'
 
   activerecord:
       attributes:
@@ -108,3 +112,23 @@ en:
           contrib_funding: 'Funding'
           contrib_other: 'Other'
           expertise: 'Special expertise:'
+
+        group:
+          name: 'Name of the group:'
+          contact_name: 'Contact person:'
+          contact_address: 'Contact email address:'
+          country: 'Country:'
+          website: 'Website:'
+          logo: 'Logo:'
+          cat_ecological: 'Ecological Stewardship'
+          cat_environment: 'Environmental Protection'
+          cat_indi: 'Indigenous Culture & Rights'
+          cat_social: 'Social Justice & Reform'
+          cat_economics: 'New Economics'
+          cat_political: 'Political Reform'
+          cat_animal: 'Animal Rights'
+          cat_activism: 'Activism'
+          cat_tech: 'Appropriate Technology / Renewable Energy'
+          cat_holistic: 'Holistic Solutions'
+          cat_conscious: 'Conscious Living'
+          comment: 'Add a quotable comment:'

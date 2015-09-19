@@ -2,6 +2,20 @@ class UserSettingsController < ApplicationController
   def index
   end
 
+  def new_group
+    @group = Group.new
+  end
+
+  def create_group
+    @group = Group.new(group_params)
+
+    if @group.save
+      redirect_to user_settings_path, notice: 'Group was successfully created.'
+    else
+      render :new
+    end
+  end
+
   def update_user
     current_user.update user_params
     flash[:success] = t('.success')
@@ -43,5 +57,9 @@ class UserSettingsController < ApplicationController
                                         :expertise
       )
     end
+
+  def group_params
+    params.require(:group).permit(:name, :contact_name, :contact_email, :country, :website, :logo, :cat_ecological, :cat_environment, :cat_indi, :cat_social, :cat_economics, :cat_political, :cat_animal, :cat_activism, :cat_tech, :cat_holistic, :cat_conscious, :comment)
+  end
 end
 
