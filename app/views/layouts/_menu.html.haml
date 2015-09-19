@@ -1,9 +1,9 @@
 .menu
   .ue-container
-    .menu__logo= image_tag 'logo_black.svg' #render 'shared/logo'
+    = link_to landing_page_path do
+      .menu__logo=image_tag 'logo_black.svg' #render 'shared/logo'
 
     %ul.menu__list
-      %li.menu__list_item{ class: ('active' if @at_landing) }= link_to t('menu.landing'), landing_page_path
       %li.menu__list_item{ class: ('active' if @at_wiki) }= link_to t('menu.un-application'), un_application_path
       %li.menu__list_item{ class: ('active' if @at_noomap) }= link_to t('menu.noomap'), '/noomap'
       %li.menu__list_item{ class: ('active' if @at_earthdollar) }= link_to t('menu.earthdollar'), '/earthdollar'
