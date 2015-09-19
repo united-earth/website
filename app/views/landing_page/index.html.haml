@@ -79,4 +79,31 @@
     .landing__signup__header=t('landing.signup.header')
     .landing__signup__intro=raw t('landing.signup.intro')
 
-    = link_to t('landing.signup.signup-button'), new_user_registration_path, class: 'landing__signup__button'
+    .landing__signup__counter
+      .landing__signup__counter_groups
+        .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
+      .landing__signup__counter_individuals
+        .landing__signup__counter_individuals_text= "#{@users.size} #{t('landing.signup.counter.individuals')}"
+      .landing__signup__counter_text= raw t('landing.signup.counter.text')
+
+    .landing__signup__signup
+      .landing__signup__signup_text= t('landing.signup.button.pre')
+      = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
+
+    .landing__signup__groups
+      - @groups.each do |group|
+
+        = link_to group.website, class: 'landing__signup__item' do
+          .overlay
+          .landing__signup__item_name.name= group.name
+          .landing__signup__item_image= image_tag group.logo.profile.url
+          .landing__signup__item_info.info= group.comment
+
+    .landing__signup__individuals
+      - @users.each do |user|
+        .landing__signup__item
+          .overlay
+          .landing__signup__item_name.name= "#{user.firstname} #{user.lastname}"
+          .landing__signup__item_image= image_tag user.avatar.profile.url
+          .landing__signup__item_info.info= user.personal_info.public_feedback
+

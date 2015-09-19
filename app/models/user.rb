@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   before_create :build_personal_info
   mount_uploader :avatar, ImageUploader
 
+  scope :voice_added, -> { joins(:personal_info).where('personal_infos.add_voice = true') }
+
 end

@@ -68,7 +68,15 @@ en:
     signup:
       header: 'Your Call to Action:'
       intro: "Everyone is invited to co-create! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
-      signup-button: 'Join the new paradigm!'
+
+      counter:
+        groups: 'groups'
+        individuals: 'individuals'
+        text: 'are supporting United Earth!<br>See their profiles below...'
+
+      button:
+        pre: 'But first...'
+        button: 'Join the new paradigm!'
 
   signup:
     header: 'Join United Earth'

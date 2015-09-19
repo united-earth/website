@@ -215,14 +215,95 @@
   &__signup
     padding: 50px
     background-color: $landingGrey
+    +clearfix
     &__header
       @extend %landing-header
       text-align: center
-      margin-bottom: 115px
+      margin-bottom: 40px
 
-    &__button
-      @extend .accent-button
-      margin: 40px auto !important
+    &__counter
+      +clearfix
+      margin: 50px auto 0 auto
+      width: 500px
+      text-align: center
+      &_groups, &_individuals
+        width: 150px
+        height: 50px
+        margin: 0 0 0 20px
+        -webkit-transform: skew(-20deg)
+        -moz-transform: skew(-20deg)
+        -o-transform: skew(-20deg)
+        background: $green
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80)
+        *
+          -webkit-transform: skew(20deg)
+          -moz-transform: skew(20deg)
+          -o-transform: skew(20deg)
+          line-height: 50px
+          color: white
+          text-transform: uppercase
+
+      &_groups
+        float: left
+      &_individuals
+        float: right
+      &_text
+        margin: 80px 0
+        text-transform: uppercase
+        text-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80)
+    &__signup
+      text-align: center
+
+      &__button
+        @extend .accent-button
+        margin: 40px auto !important
+
+    %supporter-item
+
+
+    &__item
+      position: relative
+      float: left
+      display: block
+      width: 200px
+      height: 200px
+      margin: 20px
+      box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80)
+      .overlay
+        display: none
+        position: absolute
+        top: 0
+        bottom: 0
+        width: 100%
+        background-color: $blue
+        opacity: 0.5
+        z-index: 2
+
+
+      &_name
+        display: none
+        position: absolute
+        top: 0
+        color: white
+        font-size: 20px
+        font-weith: bold
+        z-index: 3
+
+      &_info
+        display: none
+        position: absolute
+        top: 20px
+        color: white
+        z-index: 3
+
+      &_image
+        margin: 0 auto
+
+      &:hover
+        .name, .info, .overlay
+          display: block
+
+
 
 
 

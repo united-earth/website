@@ -5,6 +5,8 @@ class LandingPageController < ApplicationController
 
   def index
     @at_landing = true
+    @groups = Group.all.active
+    @users = User.all.voice_added
   end
 
 end
