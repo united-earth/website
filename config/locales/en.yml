@@ -83,6 +83,8 @@ en:
     group:
       new:
         header: 'Creating a new group...'
+      edit:
+        header: 'Edit group'
     personal_info_button: 'Personal info for co-creation'
     groups:
       header1: 'Your group:'
@@ -123,7 +125,7 @@ en:
         group:
           name: 'Name of the group:'
           contact_name: 'Contact person:'
-          contact_address: 'Contact email address:'
+          contact_email: 'Contact email address:'
           country: 'Country:'
           website: 'Website:'
           logo: 'Logo:'

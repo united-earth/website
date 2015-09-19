@@ -1,4 +1,4 @@
-= form_for group, url: url do |f|
+= simple_form_for group, url: url do |f|
   - if group.errors.any?
     #error_explanation
       %h2= "#{pluralize(group.errors.count, "error")} prohibited this group from being saved:"
@@ -22,8 +22,10 @@
     = f.label :website
     = f.text_field :website
   .field
-    = f.label :logo
-    = f.text_field :logo
+    - unless group.logo.size == 0
+      = f.label :logo
+      = image_tag group.logo.url
+    = f.input :logo
   .field
     = f.check_box :cat_ecological
     = f.label :cat_ecological

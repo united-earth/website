@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     get 'settings/new_group'          => 'user_settings#new_group',             as: :new_group
     post 'settings/new_group'         => 'user_settings#create_group',          as: :create_group
     get 'settings/edit_group/:id'     => 'user_settings#edit_group',            as: :user_edit_group
-    post 'settings/update_group'      => 'user_settings#update_group',          as: :user_update_group
+    patch 'settings/update_group/:id' => 'user_settings#update_group',          as: :user_update_group
     patch 'settings/remove_group/:id' => 'user_settings#remove_group',          as: :user_remove_group
   end
 

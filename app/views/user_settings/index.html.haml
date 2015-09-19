@@ -38,6 +38,7 @@
     .user-settings__group_list
       - @groups.each do |group|
         .user-settings__group_list_item
+          .user-settings__group_list_item_logo= image_tag group.logo.thumb.url
           .user-settings__group_list_item_name= link_to group.name, user_edit_group_path(group, locale: I18n.locale)
           =link_to t('user_settings.groups.edit-button'), user_edit_group_path(group, locale: I18n.locale), class: 'user-settings__group_list_item_edit'
           =link_to t('user_settings.groups.delete-button'),
