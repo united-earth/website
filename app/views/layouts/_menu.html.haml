@@ -13,3 +13,18 @@
       .menu__session
         = link_to '', destroy_user_session_path, class: 'menu__session_logout icon-sign-out'
         = link_to t('menu.settings'), user_settings_path, class: 'menu__session_settings icon-profile'
+
+    .menu__menu.icon-menu
+
+    %ul.menu__list-mobile
+      %li.menu__list_item{ class: ('active' if @at_about) }= link_to t('menu.about'), about_path
+      %li.menu__list_item{ class: ('active' if @at_gathering) }= link_to t('actions.menu.gathering'), actions_gathering_path
+      %li.menu__list_item{ class: ('active' if @at_com21) }= link_to t('actions.menu.com21'), actions_com21_path
+      %li.menu__list_item{ class: ('active' if @at_un) }= link_to t('actions.menu.un'), actions_un_path
+      %li.menu__list_item{ class: ('active' if @at_solutions) }= link_to t('menu.solutions'), solutions_path
+      %li.menu__list_item{ class: ('active' if @at_donations) }= link_to t('menu.donate'), donations_path
+      - unless current_user.nil?
+        %li.menu__list_item{ class: ('active' if @at_donations) }=  link_to t('menu.settings'), user_settings_path, class: 'accent-button'
+        %li.menu__list_item.logout= link_to t('menu.logout'), destroy_user_session_path, class: 'icon-sign-out'
+      - else
+        %li.menu__list_item= link_to t('menu.signup'), new_user_registration_path, class: 'accent-button'
