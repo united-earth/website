@@ -9,6 +9,7 @@
 @import 'user_settings'
 @import 'actions'
 @import 'pages'
+@import 'social-share-button'
 
 %parallax-layer
   position: absolute
@@ -66,6 +67,13 @@
   line-height: 50px
   padding: 0 !important
   background-color: $accentColor
+
+.share-buttons
+  position: fixed
+  left: 0
+  top: 100px
+  width: 20px
+  z-index: 100
 
 input[type=submit]
   @extend %button

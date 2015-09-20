@@ -36,6 +36,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'simple_form'
 gem 'meta-tags'
+gem 'social-share-button'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

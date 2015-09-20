@@ -9,6 +9,7 @@
     = csrf_meta_tags
     = display_meta_tags site: 'United Earth'
   %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu)], 'data-logged-in' => (not current_user.nil?)}
+    .share-buttons= social_share_button_tag("United Earth", :popup => "true")
     = render 'layouts/menu'
     .submenu= yield :subheader
     .parallax-container
