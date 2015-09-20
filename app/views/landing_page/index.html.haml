@@ -87,9 +87,10 @@
         .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
       .landing__signup__counter_text= raw t('landing.signup.counter.text')
 
-    .landing__signup__signup
-      .landing__signup__signup_text= t('landing.signup.button.pre')
-      = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
+    - if current_user.nil?
+      .landing__signup__signup
+        .landing__signup__signup_text= t('landing.signup.button.pre')
+        = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
 
     .landing__signup__groups
       - @groups.each do |group|
