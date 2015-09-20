@@ -1,2 +1,30 @@
-%h1 Pages#solutions
-%p Find me in app/views/pages/solutions.html.haml
+.actions.ue-container
+  .sollutions__header
+    %h1.solutions__title= t('solutions.title.header')
+    .solutions__quote= t('solutions.title.quote')
+    .solutions__quote-author= raw t('solutions.title.author')
+
+  .solutions__subheader= t('solutions.abundance.header')
+  .solutions__content= raw t('solutions.abundance.content')
+
+  .solutions__content
+    .solutions__quote= raw t('solutions.abundance.quote')
+    .solutions__quote-author= t('solutions.abundance.author')
+
+  .solutions__subheader= t('solutions.toolkit.header')
+  .solutions__content= t('solutions.toolkit.text')
+  .solutions__button
+    =link_to t('solutions.toolkit.button'), 'https://docs.google.com/document/d/1lg5AEK-vCyQn_BPJYoLhuK280IjFEuCina2dW6s6spI', class: 'accent-button', target: '_blank'
+
+  .solutions__subheader= t('solutions.portals.header')
+  .solutions__content
+    .solutions__quote= raw t('solutions.portals.quote')
+    .solutions__quote-author= t('solutions.portals.author')
+  .solutions__content= t('solutions.portals.text')
+  .solutions__content
+    = raw t('solutions.portals.links.header')
+    %ol
+      %li= link_to t('solutions.portals.links.gen'), 'http://gen.ecovillage.org/en/page/solution-library'
+      %li= link_to t('solutions.portals.links.ocg'), 'http://www.onecommunityglobal.org/open-source/'
+      %li= link_to t('solutions.portals.links.lowimpact'), 'http://www.lowimpact.org/topics-2/'
+      %li= link_to t('solutions.portals.links.thrive'), 'http://www.thrivemovement.com/solutions-hub'

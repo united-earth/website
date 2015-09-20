@@ -203,3 +203,34 @@ en:
       closing-block3: "Clearly this affirms that we, The People, cannot continue to look to politicians to take the urgent, informed and wise actions necessary - not only to prevent impending ecological, economic and social collapses - but to create a harmonious and healthy world for all people and our future generations to enjoy."
       button: 'Read whole Application'
 
+  solutions:
+    title:
+      header: 'Solutions'
+      quote: 'Though the world´s problems are becoming increasingly complex, the solutions remain embarrassingly simple.'
+      author: '- Bill Mollison<br>(Co-originator of Permaculture Design)'
+
+    abundance:
+      header: 'The Abundance of Solutions'
+      content: "A common understanding within the global movements of ecological stewardship, social innovations and indigenous knowledge systems there is a common understanding that we already have an abundant wealth of practical solutions to solve most of the world’s problems. Seeing how this vital information is not finding its rightful place in the commercial media, this Solutions Portal will become a significant branch of the United Earth platform by providing a planetary overview and directory of all the best practices, guidance and tools for ecologically- and socially-responsible living."
+      quote: "We have the knowledge and technology to provide for all and to reduce our impacts on the environment. The emergence of a global civil society is creating new opportunities to build a democratic and humane world. Our environmental, economic, political, social, and spiritual challenges are interconnected, and <b>together</b> we can forge inclusive solutions."
+      author: '- The Earth Charter'
+
+    toolkit:
+      header: 'Solutions-Awareness Toolkit'
+      text: "For people who are unfamiliar with these movements or feel doubtful about these claims we have begun compiling a solutions-awareness toolkit. All the most inspiring, educational and practical information can be found on the Internet. You just need to know where to look. Conscious cinema, videos and documentaries are proving to play a vital role in raising awareness and inspiring people to self-educate."
+      button: 'Solutions-Awareness Toolkit'
+
+    portals:
+      header: 'Current Solutions Portals'
+      quote: "You never change things by fighting the existing reality.<br>To change something, build a new model that makes the existing model obsolete."
+      author: '- R. Buckminster Fuller'
+      text: "Rather than re-inventing wheels United Earth aspires to highlight the monumental amount of valuable resources already out there. Nevertheless, we do foresee the co-creation of a single global hub that consolidates, organises and streamlines all the information on the Internet pertaining to our cultural transition."
+      links:
+        header: "As a tribute to the <i>new models that we already have</i> here is a handful of existing solutions portals:"
+        gen: 'Global Ecovillage Network Solution Library'
+        ocg: 'One Community Global Open-source'
+        lowimpact: 'Lowimpact.org'
+        thrive: 'Thrive Solutions Hub'
+
+
+
