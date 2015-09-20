@@ -233,4 +233,17 @@ en:
         thrive: 'Thrive Solutions Hub'
 
 
+  about:
+    header:
+      title: 'About United Earth'
+    wiki:
+      header: 'Our wiki'
+      text: 'more resources...'
+      link: 'United Earth Wiki'
+
+    pioneers:
+      header: 'United Earth Pioneers'
+
+
+
 
