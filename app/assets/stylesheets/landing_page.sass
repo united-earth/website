@@ -28,6 +28,7 @@
   &__content
     @extend %landing-content
     width: 790px
+    max-width: 100%
     margin: auto
 
   &__points
@@ -225,6 +226,7 @@
       +clearfix
       margin: 50px auto 0 auto
       width: 500px
+      max-width: 100%
       text-align: center
       &_groups, &_individuals
         width: 150px
@@ -321,3 +323,52 @@
     .roadmap__points
       text-align: center
       margin-top: 10px
+
+
+
+
+@media screen and (max-width: $mobile)
+  .landing
+    .learn-more__subnavi
+      display: none
+
+    .learn-more__items
+      left: 0
+      transform: none
+      padding: 0 10px
+      &_item_content
+        text-align: justify
+
+    &__signup
+      padding: 0 10px
+
+  .roadmap
+    height: 484px
+    width: 100%
+    padding-top: 135px
+    text-align: center
+    background: black
+    color: white
+
+    &__points
+      margin-top: 53px
+      height: 78px
+      font-size: 14px
+
+      &_item
+        display: inline-block
+        margin-right: 0
+
+        *
+          display: inline-block
+
+        &_ball
+          margin: 5px
+          width: 17px
+          height: 17px
+          border: 1px solid rgba(255,255,255,0.3)
+          border-radius: 20px
+          vertical-align: middle
+          line-height: 15px
+          font-size: 9px
+
