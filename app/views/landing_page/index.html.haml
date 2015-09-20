@@ -8,18 +8,21 @@
 
 = content_for :subheader do
   .roadmap__points
-    .roadmap__points_item.roadmap__points_item-1.roadmap__points_item-selected
-      .roadmap__points_item_ball
-        .figure 1
-      .roadmap__points_item_text= t('landing.roadmap.point1')
-    .roadmap__points_item.roadmap__points_item-2
-      .roadmap__points_item_ball
-        .figure 2
-      .roadmap__points_item_text= t('landing.roadmap.point2')
-    .roadmap__points_item.roadmap__points_item-3
-      .roadmap__points_item_ball
-        .figure 3
-      .roadmap__points_item_text= t('landing.roadmap.point3')
+    = link_to '#video', class: 'roadmap__points_item' do
+      .roadmap__points_item-1.roadmap__points_item-selected
+        .roadmap__points_item_ball
+          .figure 1
+        .roadmap__points_item_text= t('landing.roadmap.point1')
+    = link_to '#learn-more', class: 'roadmap__points_item' do
+      .roadmap__points_item-2
+        .roadmap__points_item_ball
+          .figure 2
+        .roadmap__points_item_text= t('landing.roadmap.point2')
+    = link_to '#signup', class: 'roadmap__points_item' do
+      .roadmap__points_item-3
+        .roadmap__points_item_ball
+          .figure 3
+        .roadmap__points_item_text= t('landing.roadmap.point3')
 .landing
   .header
     .header__shade
@@ -48,13 +51,13 @@
           .figure 3
         .roadmap__points_item_text= t('landing.roadmap.point3')
 
-  .video
+  .video#video
     .video__header= t('landing.video.header')
     .video__video
       %video#intro-video{controls:true, preload: 'none', 'data-setup'=>'{}', poster: image_path('landing_page/video-poster.jpg'), class: 'video-js vjs-default-skin', width: '673px', height:'374px'}
         %source{src: 'intro.mp4', type: 'video/mp4'}
 
-  .learn-more
+  .learn-more#learn-more
     .learn-more__header=t('landing.learn-more.header')
     .learn-more__subnavi
       .learn-more__subnavi_1.learn-more__subnavi_selected=t('landing.learn-more.subnav.what')
@@ -75,7 +78,7 @@
         .learn-more__items_item_content=t('landing.learn-more.how.content2')
         .learn-more__items_item_content=t('landing.learn-more.how.content3')
 
-  .landing__signup
+  .landing__signup#signup
     .landing__signup__header=t('landing.signup.header')
     .landing__signup__intro=raw t('landing.signup.intro')
 
