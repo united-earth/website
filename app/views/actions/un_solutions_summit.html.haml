@@ -1,10 +1,12 @@
+= content_for :parallax_background do
+  .actions__un_background
+    = image_tag 'actions/un/rejected.png'
 =render 'subheader'
 .actions.ue-container
   .actions__header
     %h1.actions__title= t('actions.un.title')
-    = image_tag 'actions/un/rejected.png'
 
-  .actions__content= t('actions.un.intro')
+  .actions__content-un-intro= t('actions.un.intro')
   .actions__content
     %ol
       %li=t('actions.un.list.a')
