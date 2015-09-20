@@ -8,11 +8,14 @@
       %li.menu__list_item{ class: ('active' if @at_actions) }= link_to t('menu.actions'), actions_gathering_path
       %li.menu__list_item{ class: ('active' if @at_solutions) }= link_to t('menu.solutions'), solutions_path
       %li.menu__list_item{ class: ('active' if @at_donations) }= link_to t('menu.donate'), donations_path
+      - unless current_user.nil?
+        %li.menu__list_item{ class: ('active' if @at_donations) }=  link_to t('menu.settings'), user_settings_path, class: 'accent-button'
+      - else
+        %li.menu__list_item= link_to t('menu.signup'), new_user_registration_path, class: 'accent-button'
 
     - unless current_user.nil?
       .menu__session
         = link_to '', destroy_user_session_path, class: 'menu__session_logout icon-sign-out'
-        = link_to t('menu.settings'), user_settings_path, class: 'menu__session_settings icon-profile'
 
     .menu__menu.icon-menu
 

@@ -37,8 +37,10 @@
       display: inline-block
       height: 90px
       line-height: 90px
-      margin-left: 50px
+      margin-left: 30px
       box-sizing: border-box
+      &:first-child
+        margin-left: 0
       a
         font-size: 18px
         color: $grey
@@ -46,6 +48,11 @@
 
       &.active
         @extend %active
+
+  .accent-button
+    width: 130px
+    color: white
+
 
   &__session
 
