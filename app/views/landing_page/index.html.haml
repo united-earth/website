@@ -80,10 +80,10 @@
     .landing__signup__intro=raw t('landing.signup.intro')
 
     .landing__signup__counter
+      .landing__signup__counter_individuals
+        .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
       .landing__signup__counter_groups
         .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
-      .landing__signup__counter_individuals
-        .landing__signup__counter_individuals_text= "#{@users.size} #{t('landing.signup.counter.individuals')}"
       .landing__signup__counter_text= raw t('landing.signup.counter.text')
 
     .landing__signup__signup
