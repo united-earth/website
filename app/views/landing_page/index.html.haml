@@ -52,13 +52,11 @@
         .roadmap__points_item_text= t('landing.roadmap.point3')
 
   .video#video
-    .video__header= t('landing.video.header')
     .video__video
       %video#intro-video{controls:true, preload: 'none', 'data-setup'=>'{}', poster: image_path('landing_page/video-poster.jpg'), class: 'video-js vjs-default-skin', width: '673px', height:'374px'}
         %source{src: 'intro.mp4', type: 'video/mp4'}
 
   .learn-more#learn-more
-    .learn-more__header=t('landing.learn-more.header')
     .learn-more__subnavi
       .learn-more__subnavi_1.learn-more__subnavi_selected=t('landing.learn-more.subnav.what')
       .learn-more__subnavi_2=t('landing.learn-more.subnav.why')
