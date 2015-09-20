@@ -32,13 +32,13 @@ en:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
       header: ''
-      content: '<b>There will come a day</b> when people of all races, colors, and creeds<br> will put aside their differences.<br> <b>They will come together</b> in love, joining hands in unification,<br> to heal the Earth and all Her children.'
-      footer: '– From the Navajo-Hopi Prophecy of The Whirling Rainbow'
+      content: '<b><i>There will come a day</b> when people of all races, colors, and creeds<br> will put aside their differences.<br> <b>They will come together</b> in love, joining hands in unification,<br> to heal the Earth and all Her children.</i>'
+      footer: '– From the Navajo-Hopi Prophecy of <i>The Whirling Rainbow</i>'
 
     roadmap:
       header: 'An Open Invitation for Co-creation'
       content: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.'
-      point1: 'Watch Intro'
+      point1: 'Watch Video'
       point2: 'Learn more'
       point3: 'Sign Up'
 
@@ -58,15 +58,16 @@ en:
       why:
         header: 'Why do we need global unity and collaboration?'
         content1: 'Humanity urgently needs a new story to effectively address the multiple crises we are facing such as climate change, ecological destruction, war, economic inequality, etc. Today there is a rapidly growing understanding that all these adversities are inherently interconnected, and that they are essentially symptomatic manifestations of political and economic systems that have forsaken the welfare of The People and our planetary home.'
-        content2: 'The untold empowering and uplifting news is that we already have the ecological solutions, social innovations, alternative political and economic models, and the living examples to solve the World’s problems. NOW is the time to realise that the change we seek is entirely in our hands - when we join them together. We are One Human Family, regardless of religion, race, ideology, or political borders. As a global collaborative, we can inspire and bring about monumental change to the planet.'
+        content2: "The untold empowering and uplifting news is that we already have the ecological solutions, social innovations, alternative political and economic models, and the living examples to solve the World's problems. NOW is the time to realise that the change we seek is entirely in our hands - when we join them together. We are One Human Family, regardless of religion, race, ideology, or political borders. As a global collaborative, we can inspire and bring about monumental change to the planet."
       how:
         header: 'How: An Open-invitation for Co-creation'
-        content1: 'Inviting planetary unity and collaboration has to be the most ambitious collective endeavour in human history. And clearly this would not be imaginable without today’s widespread availability and accessibility of the Internet. The fact that most people and all groups working for a brighter future are connected to the Internet means there is a powerful opportunity for us to come together for a common cause and vision now.'
-        content2: 'Due to the magnitude of this vision, we foresee this snowball of global unity beginning with people and groups who a) recognise the potential and possibilities of our intentional unification, and b) are willing and able to put aside our ideological differences for the greater good of all.'
-        content3: 'Unified collaboration at the scale United Earth is inviting will undoubtedly attract global mainstream attention to the wealth of existing intelligent and alternative models and solutions so we can create the more beautiful and abundant world we know is possible. Ultimately, unity and our collective Global Transition is a choice that every one of us needs to make.'
+        content1: "Inviting planetary unity and collaboration has to be the most ambitious collective endeavour in human history. And clearly this would not be imaginable without today's widespread availability and accessibility of the Internet. The fact that most people and all groups working for a brighter future are connected to the Internet means there is a powerful opportunity for us to come together for a common cause and vision now."
+        content2: "Due to the magnitude of this vision, we foresee this snowball of global unity beginning with people and groups who a) recognise the potential and possibilities of our intentional unification, and b) are willing and able to put aside our ideological differences for the greater good of all."
+        content3: "Unified collaboration at the scale United Earth is inviting will undoubtedly attract global mainstream attention to the wealth of existing intelligent and alternative models and solutions so we can create the more beautiful and abundant world we know is possible. Ultimately, unity and our collective Global Transition is a choice that every one of us needs to make."
+        content4: "The primary focus, at this stage in the development of United Earth, is building our global community of United Earth members and collaborators. As we grow together, so too will the tools and features of this website."
 
     signup:
-      header: 'Your Call to Action:'
+      header: 'Your Call to Action!'
       intro: "Everyone is invited to co-create! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
 
       counter:
@@ -76,24 +77,24 @@ en:
 
       button:
         pre: 'But first...'
-        button: 'Join the new paradigm!'
+        button: 'CO-CREATE UNITED EARTH HERE!'
 
   signup:
-    header: 'Join United Earth'
+    header: 'Add your voice for global unity and collaboration'
 
   user_settings:
-    contribution: 'Would you like to actively contribute to United Earth? By ticking a box you agree to be contacted by a team facilitator'
+    contribution: 'Please indicate how you would you like to contribute to United Earth. By ticking a box you agree to be contacted by a team facilitator'
     update_user:
       success: 'User info updated!'
     update_personal_info:
       success: 'Personal info updated!'
-    new_group_button: 'Create group'
+    new_group_button: 'Sign up as a group'
     group:
       new:
-        header: 'Creating a new group...'
+        header: 'By signing up as a group (community, organisation, tribe, network etc.) we invite you to notify your members so they can also be informed about United Earth and make their individual choice to sign up too.'
       edit:
         header: 'Edit group'
-    personal_info_button: 'Personal info for co-creation'
+    personal_info_button: 'Sign up as a co-creator'
     groups:
       header1: 'Your group:'
       header2: 'Your groups:'
@@ -108,7 +109,7 @@ en:
           lastname: 'Last name:'
           email: 'Email Address:'
         personal_info:
-          add_voice: 'Add your voice to the counter'
+          add_voice: 'Add your voice for global unity'
           newsletter: 'Subscribe to the United Earth newsletter'
           public_feedback: 'Your public feedback for our landing page:'
 
@@ -148,6 +149,8 @@ en:
           cat_tech: 'Appropriate Technology / Renewable Energy'
           cat_holistic: 'Holistic Solutions'
           cat_conscious: 'Conscious Living'
+          cat_other: 'Other'
+        comment:
           comment: 'Add a quotable comment:'
 
   actions:
@@ -174,7 +177,7 @@ en:
       title: 'CONFERENCE OF THE MOVEMENTS 5-6 DECEMBER 2015'
       content:
         1: "From 30 November to 11 December 2015, a crucial turning point in the history of mankind will take place. It will be the 21st Conference of Parties (COP21) of the UNFCCC and the 11th meeting of the Parties of the Kyoto Protocol. See link below."
-        2: "At this summit, all countries will be pursuing the goal of limiting the global temperature increase to 2ºC. However the IPCC’s latest report mentions about 4-5 ºC, with cataclysmic consequences. So whatever the outcome of the goal of 2 ºC will be, it just still isn't enough to turn the tide. Even assuming that they will achieve this goal: in practice, most likely a less result will be the net outcome. For this reason we are organizing a conference where all movements unite as ONE to present powerful alternative ideas to the current developments which the consuming-system is bringing us."
+        2: "At this summit, all countries will be pursuing the goal of limiting the global temperature increase to 2ºC. However the IPCC's latest report mentions about 4-5 ºC, with cataclysmic consequences. So whatever the outcome of the goal of 2 ºC will be, it just still isn't enough to turn the tide. Even assuming that they will achieve this goal: in practice, most likely a less result will be the net outcome. For this reason we are organizing a conference where all movements unite as ONE to present powerful alternative ideas to the current developments which the consuming-system is bringing us."
         3: "In order to \"send a message\" and express our opinions our plan is to unite all these groups and give alternate solutions to the status quo to really make something happen and to create the reality we're all working towards, helping to get beyond the status quo."
         4: "We believe that we have to co-operate to make sure our message is clear: WE WANT A LIVEABLE PLANET FOR ALL with a system based on freedom and equality."
 
@@ -189,7 +192,7 @@ en:
         e: 'the fact that the current political structures fail to recognise:'
       sublist:
         a: 'the systemic causes of our ecological and cultural degradation.'
-        b: 'that we already have the solutions to solve the world’s problems.'
+        b: "that we already have the solutions to solve the world's problems."
         c: 'that the Sustainable Development Goals set out in the Solutions Summit are not separate, but inherently interconnected.'
         d: 'support or implement <i>whole-systems</i> solutions that prioritise the welfare of The People and The Earth.'
 
@@ -199,7 +202,7 @@ en:
       motivation-block1: "1. To highlight the fact, both to the people at the summit and to the world at large, that we already have a vast wealth of tried-and-tested solutions for all the problems humanity is facing. For the welfare of humankind and our planetary home it is vital that we recognise the fact that the crises we are facing are not for a lack of solutions and alternatives, but for a lack of political will and capacity to implement them."
       motivation-block2: "2. We are here to take advantage of this Solutions Summit, at the world's most recognised international political platform, to invite all governments, organisations, representatives - and especially The People they represent - to unite and collaborate for a whole-systems, solutions-based transformation."
       closing-block1: "In one of the closing remarks we requested that <b>“since this application is submitted in the interest of all concerned and peace-loving citizens of Earth, should you decide to refuse it, we ask that you extend the courtesy of giving us the reason(s) why?”</b>"
-      closing-block2: "The fact that this application was rejected comes as no surprise. No reason for refusal was provided. One wonders if they even read it since the speakers at the summit were the same groups that have been presenting at the UN for over a decade - some of whom didn’t even apply!"
+      closing-block2: "The fact that this application was rejected comes as no surprise. No reason for refusal was provided. One wonders if they even read it since the speakers at the summit were the same groups that have been presenting at the UN for over a decade - some of whom didn't even apply!"
       closing-block3: "Clearly this affirms that we, The People, cannot continue to look to politicians to take the urgent, informed and wise actions necessary - not only to prevent impending ecological, economic and social collapses - but to create a harmonious and healthy world for all people and our future generations to enjoy."
       button: 'Read whole Application'
 
@@ -211,7 +214,7 @@ en:
 
     abundance:
       header: 'The Abundance of Solutions'
-      content: "A common understanding within the global movements of ecological stewardship, social innovations and indigenous knowledge systems there is a common understanding that we already have an abundant wealth of practical solutions to solve most of the world’s problems. Seeing how this vital information is not finding its rightful place in the commercial media, this Solutions Portal will become a significant branch of the United Earth platform by providing a planetary overview and directory of all the best practices, guidance and tools for ecologically- and socially-responsible living."
+      content: "Within the global movements of ecological stewardship, social innovations and indigenous knowledge systems there is a common understanding that we already have an abundant wealth of practical solutions to solve most of the world's problems. Seeing how this vital information is not finding its rightful place in the commercial media, this Solutions Portal will become a significant branch of the United Earth platform by providing a planetary overview and directory of all the best practices, guidance and tools for ecologically- and socially-responsible living."
       quote: "We have the knowledge and technology to provide for all and to reduce our impacts on the environment. The emergence of a global civil society is creating new opportunities to build a democratic and humane world. Our environmental, economic, political, social, and spiritual challenges are interconnected, and <b>together</b> we can forge inclusive solutions."
       author: '- The Earth Charter'
 
