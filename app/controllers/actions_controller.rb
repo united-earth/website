@@ -11,7 +11,7 @@ class ActionsController < ApplicationController
   end
 
   def un_solutions_summit
-    @at_solutions = true
+    @at_un = true
   end
 
   private

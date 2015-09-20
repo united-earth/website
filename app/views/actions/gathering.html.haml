@@ -1,3 +1,13 @@
 =render 'subheader'
-%h1 Actions#gathering
-%p Find me in app/views/actions/gathering.html.haml
+.actions.ue-container
+  %h1.actions__title= t('actions.gathering.title')
+  .actions__subtitle= t('actions.gathering.subtitle')
+
+  .actions__subheader= t('actions.gathering.intro.header')
+  .actions__content= t('actions.gathering.intro.content1')
+  .actions__content= t('actions.gathering.intro.content2')
+
+  .actions__subheader= t('actions.gathering.proposal.header')
+  .actions__content= raw t('actions.gathering.proposal.content1')
+  .actions__content= raw t('actions.gathering.proposal.content2')
+  .actions__content= raw t('actions.gathering.proposal.content3')
