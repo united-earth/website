@@ -4,9 +4,10 @@
       .menu__logo=image_tag 'logo_black.svg' #render 'shared/logo'
 
     %ul.menu__list
-      %li.menu__list_item{ class: ('active' if @at_wiki) }= link_to t('menu.un-application'), un_application_path
-      %li.menu__list_item{ class: ('active' if @at_noomap) }= link_to t('menu.noomap'), '/noomap'
-      %li.menu__list_item{ class: ('active' if @at_earthdollar) }= link_to t('menu.earthdollar'), '/earthdollar'
+      %li.menu__list_item{ class: ('active' if @at_about) }= link_to t('menu.about'), about_path
+      %li.menu__list_item{ class: ('active' if @at_actions) }= link_to t('menu.actions'), actions_gathering_path
+      %li.menu__list_item{ class: ('active' if @at_solutions) }= link_to t('menu.solutions'), solutions_path
+      %li.menu__list_item{ class: ('active' if @at_donations) }= link_to t('menu.donate'), donations_path
 
     - unless current_user.nil?
       .menu__session

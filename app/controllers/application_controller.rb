@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_locale
 
+  def set_submenu
+    @has_submenu = true
+  end
+
   private
   def set_locale
     I18n.locale = params[:locale]
