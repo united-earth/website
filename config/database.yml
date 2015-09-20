@@ -30,4 +30,7 @@ staging:
 
 production:
   <<: *default
-  database: united-earth
+  database: ue_production
+  usernam: ENV['PG_USER']
+  password: ENV['PG_PASSWORD']
+
