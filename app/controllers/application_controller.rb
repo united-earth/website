@@ -17,14 +17,21 @@ class ApplicationController < ActionController::Base
   end
 
   def set_meta
+
+    url = 'http://united-earth.vision'
+    image = 'http://united-earth.vision/logo.png'
+    if Rails.env == 'staging' || Rails.env == 'development'
+      url = 'http://staging.united-earth.vision'
+      image = 'http://staging.united-earth.vision/logo.png'
+    end
     set_meta_tags title: 'United Earth',
                   description: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.',
                   keywords: 'United, Earth, Co-creation, Unity, Collaboration, Transformation, Whole-System'
 
     set_meta_tags og: {
                       title:    'United Earth',
-                      url:      'http://united-earth.vision',
-                      image:    'http://united-earth.vision/logo.png',
+                      url:      url,
+                      image:    image,
                       description: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.'
                   }
   end
