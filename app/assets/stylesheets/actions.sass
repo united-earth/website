@@ -52,3 +52,17 @@
     &.transparent
       img
         opacity: 0.15
+
+
+@media screen and (max-width: $mobile)
+  .actions
+    &__un_background
+      img
+        transform: translateZ(-8px) scale(1) translateX(-40%) translateY(450px)
+
+    &__button
+      left: 10px
+      right: 10px
+
+    &-menu__list
+      display: none !important
