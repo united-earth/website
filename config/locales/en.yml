@@ -178,3 +178,28 @@ en:
         3: "In order to \"send a message\" and express our opinions our plan is to unite all these groups and give alternate solutions to the status quo to really make something happen and to create the reality we're all working towards, helping to get beyond the status quo."
         4: "We believe that we have to co-operate to make sure our message is clear: WE WANT A LIVEABLE PLANET FOR ALL with a system based on freedom and equality."
 
+    un:
+      title: 'The United Earth Application for the UN Solutions Summit on September 27, 2015'
+      intro: 'On August 29th, 2015, United Earth submitted the following application for the UN Solutions Summit. We are sharing it with you to provide a deeper insight into the values, purpose and vision of our, and your United Earth. Furthermore, this application serves as a testimony to:'
+      list:
+        a: 'our commitment to promoting global unity and collaboration for a whole-systems transformation of human society.'
+        b: 'our dedication to bring our wealth of existing practical solutions and alternative models to the forefront of public awareness.'
+        c: 'our willingness to work with existing political bodies.'
+        d: 'our integrity, by not compromising our values and objectives when dealing with existing political bodies.'
+        e: 'the fact that the current political structures fail to recognise:'
+      sublist:
+        a: 'the systemic causes of our ecological and cultural degradation.'
+        b: 'that we already have the solutions to solve the world’s problems.'
+        c: 'that the Sustainable Development Goals set out in the Solutions Summit are not separate, but inherently interconnected.'
+        d: 'support or implement <i>whole-systems</i> solutions that prioritise the welfare of The People and The Earth.'
+
+      pre-question: 'The final question in the application was this:'
+      final-question: 'Share with us your motivation(s) for applying to be a part of the inaugural Solutions Summit.'
+      motivation: "The motivation of a United Earth to be participating in the inaugural Solutions Summit is twofold:"
+      motivation-block1: "1. To highlight the fact, both to the people at the summit and to the world at large, that we already have a vast wealth of tried-and-tested solutions for all the problems humanity is facing. For the welfare of humankind and our planetary home it is vital that we recognise the fact that the crises we are facing are not for a lack of solutions and alternatives, but for a lack of political will and capacity to implement them."
+      motivation-block2: "2. We are here to take advantage of this Solutions Summit, at the world's most recognised international political platform, to invite all governments, organisations, representatives - and especially The People they represent - to unite and collaborate for a whole-systems, solutions-based transformation."
+      closing-block1: "In one of the closing remarks we requested that <b>“since this application is submitted in the interest of all concerned and peace-loving citizens of Earth, should you decide to refuse it, we ask that you extend the courtesy of giving us the reason(s) why?”</b>"
+      closing-block2: "The fact that this application was rejected comes as no surprise. No reason for refusal was provided. One wonders if they even read it since the speakers at the summit were the same groups that have been presenting at the UN for over a decade - some of whom didn’t even apply!"
+      closing-block3: "Clearly this affirms that we, The People, cannot continue to look to politicians to take the urgent, informed and wise actions necessary - not only to prevent impending ecological, economic and social collapses - but to create a harmonious and healthy world for all people and our future generations to enjoy."
+      button: 'Read whole Application'
+

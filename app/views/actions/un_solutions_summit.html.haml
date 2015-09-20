@@ -1,3 +1,32 @@
 =render 'subheader'
-%h1 Actions#un_solutions_summit
-%p Find me in app/views/actions/un_solutions_summit.html.haml
+.actions.ue-container
+  .actions__header
+    %h1.actions__title= t('actions.un.title')
+    = image_tag 'actions/un/rejected.png'
+
+  .actions__content= t('actions.un.intro')
+  .actions__content
+    %ol
+      %li=t('actions.un.list.a')
+      %li=t('actions.un.list.b')
+      %li=t('actions.un.list.c')
+      %li=t('actions.un.list.d')
+      %li
+        =t('actions.un.list.e')
+        %ol
+          %li=t('actions.un.sublist.a')
+          %li=t('actions.un.sublist.b')
+          %li=t('actions.un.sublist.c')
+          %li=raw t('actions.un.sublist.d')
+  .actions__content= t('actions.un.pre-question')
+  %b.actions__content= t('actions.un.final-question')
+  .actions__content= t('actions.un.motivation')
+  .actions__content= t('actions.un.motivation-block1')
+  .actions__content= t('actions.un.motivation-block2')
+  %hr
+  .actions__content= raw t('actions.un.closing-block1')
+  .actions__content= raw t('actions.un.closing-block2')
+  .actions__content= raw t('actions.un.closing-block3')
+  .actions__button
+    =link_to t('actions.un.button'), '/UnitedEarth-UNSolutionsSummitApplication.pdf', class: 'accent-button'
+
