@@ -37,7 +37,9 @@ set :repo_url, 'https://github.com/united-earth/website.git'
 namespace :deploy do
 
   task :symlink_uploads do
-    run "ln -nfs #{shared_path}/uploads  #{release_path}/public/uploads"
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "ln -nfs #{shared_path}/uploads  #{release_path}/public/uploads"
+    end
   end
 
   desc 'Restart application'
@@ -49,7 +51,9 @@ namespace :deploy do
     end
   end
 
+  after :publishing, :symlink_uploads
   after :publishing, :restart
+
 
 
 
@@ -73,5 +77,3 @@ namespace :deploy do
   end
 
 end
-
-after 'deploy:update_code', 'deploy:symlink_uploads'
