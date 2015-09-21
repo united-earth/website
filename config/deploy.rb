@@ -42,6 +42,12 @@ namespace :deploy do
     end
   end
 
+  task :symlink_db do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    end
+  end
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
@@ -52,6 +58,7 @@ namespace :deploy do
   end
 
   after :publishing, :symlink_uploads
+  after :publishing, :symlink_db
   after :publishing, :restart
 
 
