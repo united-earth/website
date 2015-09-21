@@ -24,13 +24,9 @@ test:
 staging:
   <<: *default
   database: ue_staging
-  username: ue_staging
-  password: H4aHvXOa54
-  host: localhost
 
 production:
   <<: *default
   database: ue_production
-  username: ENV['PG_USER']
-  password: ENV['PG_PASSWORD']
+
 
