@@ -9,7 +9,7 @@
     = csrf_meta_tags
     = display_meta_tags site: 'United Earth'
   %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu)], 'data-logged-in' => (not current_user.nil?)}
-    .share-buttons= social_share_button_tag("United Earth", :popup => "true")
+    %script{type:'text/javascript', src:'//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js', 'data-shr-siteid'=>'85322f374cbdf9a79b3139a0b0dabcfc', 'data-cfasync'=>'false', async: 'async'}
     = render 'layouts/menu'
     .submenu= yield :subheader
     .parallax-container
