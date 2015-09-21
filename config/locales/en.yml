@@ -241,11 +241,14 @@ en:
       title: 'About United Earth'
     wiki:
       header: 'Our wiki'
-      text: 'more resources...'
-      link: 'United Earth Wiki'
+      text: 'To find out more about United Earth: A brief history, our objectives, our visions, United Earth’s relationship with partnering organisations, collaboration tools and more please visit our wiki.'
+      link: 'The United Earth Wiki'
 
     pioneers:
-      header: 'United Earth Pioneers'
+      header: 'United Earth Pioneers & Pioneering Collaborators'
+      content1: 'We recognise that the vision of global unity and collaboration for a whole-systems transformation does not come from any one person or group. It has been progressively emerging through our collective consciousness for many years now. The fact that you are exploring this website is one of many “living” proofs that we have reached the critical mass required for our collective vision to come into its full and monumental manifestation. As initiators of the United Earth platform we seek no recognition. We are all <i>equally</i> responsible for co-creating this.'
+      content2: 'Nevertheless, in the spirit of transparency - as well as an opportunity to present a new paradigm social networking tool - we wish to introduce the UE pioneering team in the form of demonstrating a “holonic mapping” co-creation vehicle that is being developed by one of our first collaborators called Noomap. Both UE and Noomap are openly inviting all interested and like-minded people and groups to share our skills, ideas and resources to co-create a synergistic collaboration platform that can facilitate our Global Transition. (For more information on UE’s relationship structure with partners and collaborators please see the wiki)'
+      content3: 'Feel free to explore the Holon below by following the instructions in the text box on the right...'
 
   donations:
     title:
