@@ -25,9 +25,10 @@ en:
     actions: 'Actions'
     solutions: 'Solutions'
     donate: 'Donate'
-
     logout: 'Log out'
-    settings: 'My info'
+    settings: 'My Profile'
+    signup: 'Sign Up'
+
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
