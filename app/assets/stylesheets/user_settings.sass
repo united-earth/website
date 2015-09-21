@@ -1,21 +1,47 @@
 .user-settings
+  @extend %ue-inputs
+  &__background
+    height: 100vh
+    overflow: hidden
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    max-height: 100%
+    transform: translateX(-50%) translateY(-50%)
+    &__image
+      position: relative
+      max-width: 100%
+      left: 50%
+      width: 800px
+      opacity: 0.1
+      max-height: 100%
+      //transform: translateX(-50%)
+      transform: translateZ(-2px) scale(3) translateX(-18%) translateY(30%)
+
+  &__header
+    font-size: 30px
+    font-weight: bold
   &__user
     +clearfix
     &_header
       font-size: 30px
       font-weight: bold
 
+    &_basic
+      +clearfix
 
-  &__user_avatar
-    float: right
-    *
-      float: right
-
+  hr
+    display: block
+    margin: 60px 0
 
   form
     .line
       display: block
       margin-top: 10px
+
+  &__buttons
+    +clearfix
 
 
   &__info-button
@@ -23,18 +49,31 @@
     margin: 40px auto !important
     width: 300px !important
 
+  &__share
+    width: 600px
+    max-width: 100%
+    margin: auto
+    &_buttons
+      text-align: center
+      margin: auto
+
   &__personal
     border: 0px solid $mediumGrey
     border-right-width: 1px
 
   &__group
+    margin-top: 60px
+    &_list
+      display: table
+      width: 100%
     &_list-header
       font-size: 18px
       font-weight: bold
 
     &_list_item
+      display: table-row
       &_logo, &_name, &_delete
-        display: inline-block
+        display: table-cell
 
       %groups-button
         @extend %button

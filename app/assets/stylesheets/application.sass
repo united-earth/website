@@ -75,6 +75,33 @@
   width: 20px
   z-index: 100
 
+%ue-inputs
+  label
+    @extend %fontLight
+    font-weight: normal
+  input, textarea
+    border-radius: 3px
+    width: 600px
+    max-width: 100%
+    margin-right: 20px
+    &[type=text]
+      -webkit-appearance: none
+      -moz-appearance: none
+      border: 2px solid $accentColor
+      box-shadow: 0px 0px 3px 0px $accentColor
+    &[type=checkbox]
+      width: 15px
+      height: 15px
+    &[type=submit]
+      float: right
+      width: 200px
+      margin: 20px auto
+  textarea
+    -webkit-appearance: none
+    -moz-appearance: none
+    border: 2px solid $accentColor
+    box-shadow: 0px 0px 3px 0px $accentColor
+
 input[type=submit]
   @extend %button
   border: none

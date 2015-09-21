@@ -1,6 +1,9 @@
+= content_for :parallax_background do
+  = image_tag 'logo.svg', class: 'user-settings__background__image'
+
 .user-settings.ue-container
   .user-settings__user
-    .user-settings__user_header User settings
+    .user-settings__user_header= t('user_settings.header')
     .col-sm-6
       .user-settings__user_basic
         = form_for current_user, {url: user_update_path, method: :post} do |f|
@@ -13,34 +16,48 @@
           .line
             = f.label :email
             = current_user.email
-          = f.submit
-
+          .line
+            = f.label :avatar
+            - if current_user.avatar.size > 0
+              = image_tag current_user.avatar.profile.url
+            = f.file_field :avatar
+          = f.submit t('user_settings.save')
     .col-sm-6
-      .user-settings__user_avatar
-        - if current_user.avatar.size > 0
-          = image_tag current_user.avatar.profile.url
-        = simple_form_for current_user, {url: user_update_path, method: :post} do |f|
-          = f.file_field :avatar
-          =f.submit 'change avatar'
-
+      .user-settings__user_info
+        = form_for current_user.personal_info, url: update_personal_info_path(locale: I18n.locale), method: :post do |f|
+          .line
+            = f.label :newsletter
+            = f.check_box :newsletter
+          .line
+            = f.label :add_voice
+            = f.check_box :add_voice, class: 'user-settings__public-feedback'
+          .line.user-settings__public-feedback
+            = f.label :public_feedback
+            = f.text_area :public_feedback
+          = f.submit t('user_settings.save')
 
   %hr
 
-  .col-sm-6.user-settings__personal
-    =link_to t('user_settings.personal_info_button'), personal_info_path, class: 'user-settings__info-button'
-    = form_for current_user.personal_info, url: update_personal_info_path(locale: I18n.locale), method: :post do |f|
-      .line
-        = f.check_box :add_voice
-        = f.label :add_voice
-      .line
-        = f.check_box :newsletter
-        = f.label :newsletter
-      .line
-        = f.label :public_feedback
-        = f.text_area :public_feedback
-      = f.submit
-  .col-sm-6.user-settings__group
-    =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
+  .user-settings__share
+    .user-settings__share_text= raw t('user_settings.share.text')
+    .user-settings__share_buttons= social_share_button_tag("United Earth", :popup => "true")
+    .user-settings__share_templates
+      .user-settings__share_templates_head= t('user_settings.share.templates.head')
+      %ul
+        %li= t('user_settings.share.templates.1')
+        %li= t('user_settings.share.templates.2')
+        %li= t('user_settings.share.templates.3')
+        %li= t('user_settings.share.templates.4')
+
+  %hr
+  .user-settings__buttons
+    .col-sm-6
+      =link_to t('user_settings.personal_info_button'), personal_info_path, class: 'user-settings__info-button'
+    .col-sm-6
+      =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
+
+  %hr
+  .user-settings__group
     - if @groups.size == 1
       .user-settings__group_list-header= t('user_settings.groups.header1')
     - if @groups.size > 1

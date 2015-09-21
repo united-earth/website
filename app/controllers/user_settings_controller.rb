@@ -1,4 +1,6 @@
 class UserSettingsController < ApplicationController
+  before_filter :set_at_settings
+
   def index
     @groups = current_user.groups.active
   end
@@ -82,6 +84,10 @@ class UserSettingsController < ApplicationController
 
   def group_params
     params.require(:group).permit(:name, :contact_name, :contact_email, :country, :website, :logo, :cat_ecological, :cat_environment, :cat_indi, :cat_social, :cat_economics, :cat_political, :cat_animal, :cat_activism, :cat_tech, :cat_holistic, :cat_conscious, :comment)
+  end
+
+  def set_at_settings
+    @at_user_settings = true
   end
 end
 

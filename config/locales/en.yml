@@ -26,7 +26,7 @@ en:
     solutions: 'Solutions'
     donate: 'Donate'
     logout: 'Log out'
-    settings: 'My Profile'
+    settings: 'Profile'
     signup: 'Sign Up'
 
   landing:
@@ -84,6 +84,7 @@ en:
     header: 'Add your voice for global unity and collaboration'
 
   user_settings:
+    header: 'Your profile'
     contribution: 'Please indicate how you would you like to contribute to United Earth. By ticking a box you agree to be contacted by a team facilitator'
     update_user:
       success: 'User info updated!'
@@ -102,7 +103,15 @@ en:
       delete-button: 'Remove'
       edit-button: 'Edit'
       confirm-delete: 'Really delete group %{group_name}?'
-
+    save: 'Save'
+    share:
+      text: 'The most effective action you can take towards co-creating global unity is to let all your friends, family and networks know that United Earth <i>is happening</i>! Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
+      templates:
+        head: 'Letter Templates'
+        1: 'Personal'
+        2: 'Groups'
+        3: 'Indigenous Elders & Leaders'
+        4: 'Grassroots Elders & Leaders'
   activerecord:
       attributes:
         user:
@@ -110,9 +119,9 @@ en:
           lastname: 'Last name:'
           email: 'Email Address:'
         personal_info:
-          add_voice: 'Add your voice for global unity'
-          newsletter: 'Subscribe to the United Earth newsletter'
-          public_feedback: 'Your public feedback for our landing page:'
+          add_voice: 'Share Enthusiasm for United Earth and tick the box if you would like it to be shared on the Home page:'
+          newsletter: 'Receive the United Earth newsletter:'
+          public_feedback: 'Share your ideas, questions, constructive criticism, etc.:'
 
           contrib_admin: 'Administration'
           contrib_coord: 'Coordination'

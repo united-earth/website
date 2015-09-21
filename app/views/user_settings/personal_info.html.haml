@@ -1,5 +1,5 @@
 .user-settings.ue-container
-  .user-settings_header=t('user_settings.contribution')
+  .user-settings__header=t('user_settings.contribution')
   = form_for current_user.personal_info, url: update_personal_info_path(locale: I18n.locale), method: :post do |f|
     .line
       = f.check_box :contrib_admin
