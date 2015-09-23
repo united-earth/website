@@ -5,6 +5,8 @@
   .landing__background
   %video.header__bgvid{autoplay: true, loop: true, poster: image_path('landing_page/bg.jpg'), onclick: "document.getElementById('bgvid').play()"}
     %source{src: 'bg.m4v', type: 'video/x-m4v'}
+    %source{src: 'bg.mp4', type: 'video/mp4'}
+    %source{src: 'bg.mkv', type: 'video/ogg'}
 
 = content_for :subheader do
   .roadmap__points
