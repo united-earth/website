@@ -18,8 +18,8 @@ class ApplicationController < ActionController::Base
 
   def set_meta
 
-    url = 'http://united-earth.vision'
-    image = 'http://united-earth.vision/logo.png'
+    url = 'https://united-earth.vision/en'
+    image = 'https://united-earth.vision/logo.png'
     if Rails.env == 'staging' || Rails.env == 'development'
       url = 'http://staging.united-earth.vision'
       image = 'http://staging.united-earth.vision/logo.png'
