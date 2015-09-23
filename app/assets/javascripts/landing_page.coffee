@@ -1,38 +1,40 @@
 $(document).on 'ready page:load', () ->
   loggedIn = ($('body').attr('data-logged-in') != undefined)
+  stickRoadmapScrollPos = 1050
+  stickRoadmapScrollPos = 1180 if window.mobilecheck()
+  signupScrollPos = 2750
+  signupScrollPos = 3500 if window.mobilecheck()
   if $('.landing').size() > 0
     $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
-      if this.scrollTop < 600
+      if this.scrollTop < 700
         $('body').addClass('hide-header')
       else
         $('body').removeClass('hide-header')
 
-      if this.scrollTop > 940
+      if this.scrollTop > stickRoadmapScrollPos
         $('body').addClass('stick-roadmap')
       else
         $('body').removeClass('stick-roadmap')
 
-      if this.scrollTop > 2000 and this.scrollTop < 2700
-        offset = this.scrollTop - 2000
-        console.log offset
+      if this.scrollTop > 1600 and this.scrollTop < 2400
+        offset = this.scrollTop - 1600
         subnavi = $('.learn-more__subnavi')
-        console.log subnavi
         subnavi.css('margin-top', offset + 'px')
 
-      if this.scrollTop < 2100
+      if this.scrollTop < 1800
         $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
         $('.learn-more__subnavi_1').addClass('learn-more__subnavi_selected')
 
-      if this.scrollTop > 2100
+      if this.scrollTop > 1900
         $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
         $('.learn-more__subnavi_2').addClass('learn-more__subnavi_selected')
 
-      if this.scrollTop > 2500
+      if this.scrollTop > 2200
         $('.learn-more__subnavi *').removeClass('learn-more__subnavi_selected')
         $('.learn-more__subnavi_3').addClass('learn-more__subnavi_selected')
 
-      if this.scrollTop > 1900
+      if this.scrollTop > 1650
         $('.submenu .roadmap__points_item-1').addClass('roadmap__points_item-check')
         $('.submenu .roadmap__points_item-2').addClass('roadmap__points_item-selected')
       else
@@ -40,7 +42,7 @@ $(document).on 'ready page:load', () ->
         $('.submenu .roadmap__points_item-2').removeClass('roadmap__points_item-selected')
 
 
-      if this.scrollTop > 2750
+      if this.scrollTop > signupScrollPos
         $('.submenu .roadmap__points_item-2').addClass('roadmap__points_item-check')
         $('.submenu .roadmap__points_item-3').addClass('roadmap__points_item-selected')
       else

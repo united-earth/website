@@ -129,14 +129,12 @@
 
     &__logo
       position: absolute
+      width: 150px
       left: 50%
       bottom: 45px
       transform: translateX(-50%)
       color: white
       z-index: 4
-      -webkit-transition: left 1s, opacity 1s
-      transition: left 1s, opacity 1s
-      opacity: 0
 
     &__tagline
       position: absolute
@@ -150,7 +148,7 @@
 
   .video
     box-sizing: border-box
-    height: 680px
+    //height: 680px
     background-color: $landingGrey
     text-align: center
     padding: 60px 0
@@ -179,7 +177,7 @@
     &__items
       position: relative
       left: 50%
-      transform: translateX(-50%) translateX(160px)
+      transform: translateX(-50%) translateX(85px)
       max-width: 762px
       width: 100%
 
@@ -192,11 +190,12 @@
           margin-bottom: 12px
         &_content
           margin-bottom: 20px
+          text-align: justify
 
     &__subnavi
       position: absolute
       left: 50%
-      transform: translateX(-358px)
+      transform: translateX(-470px)
 
       %item
         width: 88px
@@ -233,6 +232,9 @@
       text-align: justify
 
     &__counter
+      &_header
+        @extend %landing-subheader
+
       +clearfix
       margin: 50px auto 0 auto
       width: 500px
@@ -245,7 +247,7 @@
         -webkit-transform: skew(-20deg)
         -moz-transform: skew(-20deg)
         -o-transform: skew(-20deg)
-        background: $green
+        background: $accentColor
         box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80)
         *
           -webkit-transform: skew(20deg)
@@ -267,8 +269,20 @@
       text-align: center
 
       &__button
-        @extend .accent-button
-        margin: 40px auto !important
+        @extend .arrow_box
+        position: relative
+        display: inline-block
+        top: 0 !important
+        height: 50px
+        line-height: 50px
+        width: 300px !important
+        background-color: $green !important
+        margin: 80px auto !important
+        color: white
+        text-decoration: none
+        &:hover
+          text-decoration: none
+          color: white
 
     %supporter-item
 
@@ -322,9 +336,6 @@
 .hide-header
   .menu
     height: 0
-  .header__logo
-    width: 150px
-    opacity: 1
 
 
 .stick-roadmap
@@ -351,6 +362,11 @@
 
     &__signup
       padding: 0 10px
+      &__signup__button
+        width: 260px !important
+
+    .header__tagline
+      bottom: 0
 
   .roadmap
     height: 484px

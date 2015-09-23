@@ -83,6 +83,7 @@
       .landing__signup__intro=raw t('landing.signup.intro')
 
       .landing__signup__counter
+        .landing__signup__counter_header=t('landing.signup.counter.header')
         .landing__signup__counter_individuals
           .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
         .landing__signup__counter_groups
@@ -102,10 +103,11 @@
             .landing__signup__item_info.info= group.comment
 
       .landing__signup__individuals
-        - @users.each do |user|
-          .landing__signup__item
-            .overlay
-            .landing__signup__item_name.name= "#{user.firstname} #{user.lastname}"
-            .landing__signup__item_image= image_tag user.avatar.profile.url
-            .landing__signup__item_info.info= user.personal_info.public_feedback
+        - if false
+          - @users.each do |user|
+            .landing__signup__item
+              .overlay
+              .landing__signup__item_name.name= "#{user.firstname} #{user.lastname}"
+              .landing__signup__item_image= image_tag user.avatar.profile.url
+              .landing__signup__item_info.info= user.personal_info.public_feedback
 
