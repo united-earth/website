@@ -42,14 +42,13 @@
   .user-settings__share
     .user-settings__share_text= raw t('user_settings.share.text')
     .user-settings__share_buttons= social_share_button_tag("United Earth", :popup => "true")
-    - if false
+    - if true
       .user-settings__share_templates
         .user-settings__share_templates_head= t('user_settings.share.templates.head')
         %ul
-          %li= t('user_settings.share.templates.1')
-          %li= t('user_settings.share.templates.2')
-          %li= t('user_settings.share.templates.3')
-          %li= t('user_settings.share.templates.4')
+          %li= link_to 'Personal invitation', '/UE_Personal_Invitation_Template.pdf', target: '_blank'
+          %li= link_to 'Group invitation', '/UE_Group_Invitation_Template.pdf', target: '_blank'
+          %li= link_to 'Invitation of change-maker', '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
 
   %hr
   .user-settings__buttons
