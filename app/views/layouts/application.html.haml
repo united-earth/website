@@ -8,6 +8,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     = display_meta_tags site: 'United Earth'
+    %link{rel: 'shortcut icon', href: 'favicon.ico'}
   %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu)], 'data-logged-in' => (not current_user.nil?)}
     - unless @at_user_settings
       %script{type:'text/javascript', src:'//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js', 'data-shr-siteid'=>'85322f374cbdf9a79b3139a0b0dabcfc', 'data-cfasync'=>'false', async: 'async'}
