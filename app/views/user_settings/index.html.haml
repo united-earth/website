@@ -28,12 +28,13 @@
           .line
             = f.label :newsletter
             = f.check_box :newsletter
-          .line
-            = f.label :add_voice
-            = f.check_box :add_voice, class: 'user-settings__public-feedback'
-          .line.user-settings__public-feedback
-            = f.label :public_feedback
-            = f.text_area :public_feedback
+          - if false
+            .line
+              = f.label :add_voice
+              = f.check_box :add_voice, class: 'user-settings__public-feedback'
+            .line.user-settings__public-feedback
+              = f.label :public_feedback
+              = f.text_area :public_feedback
           = f.submit t('user_settings.save')
 
   %hr
@@ -41,13 +42,14 @@
   .user-settings__share
     .user-settings__share_text= raw t('user_settings.share.text')
     .user-settings__share_buttons= social_share_button_tag("United Earth", :popup => "true")
-    .user-settings__share_templates
-      .user-settings__share_templates_head= t('user_settings.share.templates.head')
-      %ul
-        %li= t('user_settings.share.templates.1')
-        %li= t('user_settings.share.templates.2')
-        %li= t('user_settings.share.templates.3')
-        %li= t('user_settings.share.templates.4')
+    - if false
+      .user-settings__share_templates
+        .user-settings__share_templates_head= t('user_settings.share.templates.head')
+        %ul
+          %li= t('user_settings.share.templates.1')
+          %li= t('user_settings.share.templates.2')
+          %li= t('user_settings.share.templates.3')
+          %li= t('user_settings.share.templates.4')
 
   %hr
   .user-settings__buttons
