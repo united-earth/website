@@ -96,7 +96,7 @@
       .landing__signup__groups
         - @groups.each do |group|
 
-          = link_to group.website, class: 'landing__signup__item' do
+          = link_to make_fullpath(group.website), class: 'landing__signup__item' do
             .overlay
             .landing__signup__item_name.name= group.name
             .landing__signup__item_image= image_tag group.logo.profile.url
