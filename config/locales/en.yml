@@ -109,10 +109,9 @@ en:
       text: 'The most effective action you can take towards co-creating global unity is to let all your friends, family and networks know that United Earth <i>is happening</i>! Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
       templates:
         head: 'Letter Templates'
-        1: 'Personal'
-        2: 'Groups'
-        3: 'Indigenous Elders & Leaders'
-        4: 'Grassroots Elders & Leaders'
+        personal: 'Personal invitation'
+        group: 'Group invitation'
+        changemaker: 'Invitation of change-maker'
   activerecord:
       attributes:
         user:

@@ -46,9 +46,9 @@
       .user-settings__share_templates
         .user-settings__share_templates_head= t('user_settings.share.templates.head')
         %ul
-          %li= link_to 'Personal invitation', '/UE_Personal_Invitation_Template.pdf', target: '_blank'
-          %li= link_to 'Group invitation', '/UE_Group_Invitation_Template.pdf', target: '_blank'
-          %li= link_to 'Invitation of change-maker', '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
+          %li= link_to t('user_settings.share.templates.personal'), '/UE_Personal_Invitation_Template.pdf', target: '_blank'
+          %li= link_to t('user_settings.share.templates.group'), '/UE_Group_Invitation_Template.pdf', target: '_blank'
+          %li= link_to t('user_settings.share.templates.changemaker'), '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
 
   %hr
   .user-settings__buttons
