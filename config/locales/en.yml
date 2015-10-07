@@ -71,6 +71,7 @@ en:
       intro: "Everyone is invited! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
 
       counter:
+        header: 'Our emerging United Earth Community Counters:'
         groups: 'groups'
         individuals: 'individuals'
         text: 'are supporting United Earth!<br>See their profiles below...'
@@ -83,6 +84,7 @@ en:
     header: 'Add your voice for global unity and collaboration'
 
   user_settings:
+    header: 'Your profile'
     contribution: 'Please indicate how you would you like to contribute to United Earth. By ticking a box you agree to be contacted by a team facilitator'
     update_user:
       success: 'User info updated!'
@@ -101,7 +103,14 @@ en:
       delete-button: 'Remove'
       edit-button: 'Edit'
       confirm-delete: 'Really delete group %{group_name}?'
-
+    save: 'Save'
+    share:
+      text: 'The most effective action you can take towards co-creating global unity is to let all your friends, family and networks know that United Earth <i>is happening</i>! Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
+      templates:
+        head: 'Letter Templates'
+        personal: 'Personal invitation'
+        group: 'Group invitation'
+        changemaker: 'Invitation of change-maker'
   activerecord:
       attributes:
         user:
@@ -211,6 +220,25 @@ en:
       header: 'Solutions'
       quote: 'Though the world´s problems are becoming increasingly complex, the solutions remain embarrassingly simple.'
       author: '- Bill Mollison<br>(Co-originator of Permaculture Design)'
+
+    localisation:
+      header: 'Localisation'
+      quote: ' Economic localisation is the key to sustaining biological and cultural diversity – to sustaining life itself. The sooner we shift towards the local, the sooner we will begin healing our planet, our communities, and ourselves.'
+      author: '- Helena Norberg-Hodge'
+      content: 'Most social and ecological innovators will agree that the most fundamental criterion for all our political, social and economic reform is re-localisation. This means bringing governance & decision-making, livelihoods & businesses, food & energy production, water, waste & biodiversity management back to a locally directed and a bio-regionally sustainable level. Through these practical collective efforts, as exemplified by the Transition Town movement, we can build vibrant local economies and resilient communities.'
+
+    understanding:
+      header: 'Understanding “The problem”'
+      quote1: 'The few who understand the system will either be so interested in its profits or be so dependent upon its favours that there will be no opposition from that class, while on the other hand, the great body of people, mentally incapable of comprehending the tremendous advantage that capital derives from the system, will bear its burdens without complaint, and perhaps without even suspecting that the system is inimical to their interests.'
+      author1: '- The Rothschild brothers of London writing to associates in New York, 1863.'
+      content1: 'To effectively design and implement solutions we must first understand the nature and root cause of our problems. Today there can be little doubt that human society at large is completely ruled by money. The vast majority of people spend most of their time, energy and intelligence thinking or worrying about how to acquire, accumulate or spend money. Money itself is not the problem. Only when we understand that the fractional reserve banking system is designed to impose and maintain a paradigm of scarcity and inequality, can we begin to comprehend the extent to which it impacts all other aspects of human society - with all its resulting ramifications, i.e. greed, violence, poverty, etc. '
+      quote2: 'There is without a doubt a mega-crisis that we are facing in the coming years. And the big elephant in the living room is the money problem. Unfortunately most people who are active in the sustainability movement and the environmental movement don’t understand the nature of this problem. We are not going to make any significant headway with sustainability or restoration of the environment until we solve the money problem.'
+      author2: '- Thomas H. Greco, Currency Design Specialist<br>(From The Money Fix)'
+      content2: 'Numerous documentaries exposing the fraudulence of the central banking system can be found on the Internet. The Money Fix is one documentary that provides both critical information as well as some key alternatives. (Please see the solutions-awareness toolkit below for a variety of relevant videos)'
+      content3: 'United Earth, along with numerous New Economy groups, invites humanity into a new paradigm of economic equality, Universal Basic Income, circular economies, moneyless exchanges, sharing and gifting. We have the economic models to create a responsible abundance for everyone: a world where everyone’s basic rights - healthy food, clean water, comfortable shelter and renewable energy - are easily met; a world where all people can fully develop and express their unique talents and creativity, free from any financial concerns. To co-create this world we need to collectively choose it.'
+      content4: 'United Earth is co-creating a global platform where we can all express this choice.'
+      content5: 'Living in a moneyless community or town will soon become a matter of choice for each of us. During the transition, however, there are numerous available tools such as cryptocurrencies, mutual credit unions, community exchange systems that we can communally choose from.'
+      content6: 'One of the collaborators of United Earth is the Earth Dollar, who are currently developing a cryptocurrency backed by land and natural capital, as a means for ensuring financial mobility to fund our collective Global Transition. For more information, please refer to the United Earth application for the United Nations Inaugural Solutions Summit.'
 
     abundance:
       header: 'The Abundance of Solutions'
