@@ -28,6 +28,7 @@ en:
 
     logout: 'Log out'
     settings: 'My info'
+    signup: 'Unite'
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
@@ -111,6 +112,7 @@ en:
         personal: 'Personal invitation'
         group: 'Group invitation'
         changemaker: 'Invitation of change-maker'
+        indigenous: 'Indigenous (coming soon)'
   activerecord:
       attributes:
         user:
