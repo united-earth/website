@@ -17,7 +17,7 @@ $(document).on 'ready page:load', () ->
       else
         $('body').removeClass('stick-roadmap')
 
-      if this.scrollTop > 1600 and this.scrollTop < 2400
+      if this.scrollTop > 1600 and this.scrollTop < 2250
         offset = this.scrollTop - 1600
         subnavi = $('.learn-more__subnavi')
         subnavi.css('margin-top', offset + 'px')
