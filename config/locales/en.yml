@@ -25,20 +25,19 @@ en:
     actions: 'Actions'
     solutions: 'Solutions'
     donate: 'Donate'
-    logout: 'Log out'
-    settings: 'Profile'
-    signup: 'Sign Up'
 
+    logout: 'Log out'
+    settings: 'My info'
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
       header: ''
-      content: '<b><i>There will come a day</b> when people of all races, colors, and creeds<br> will put aside their differences.<br> <b>They will come together</b> in love, joining hands in unification,<br> to heal the Earth and all Her children.</i>'
-      footer: '– From the Navajo-Hopi Prophecy of <i>The Whirling Rainbow</i>'
+      content: '<i>Our task is to unite humanity throughout the world.</i>'
+      footer: '– Nelson Mandela (First meeting of the Elders, South Africa, 2007)'
 
     roadmap:
       header: 'An Open Invitation for Co-creation'
-      content: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.'
+      content: 'United Earth has begun. This website is a co-creative work-in-progress.<br> We have started building the framework of a platform for global unity and collaboration for a whole-systems transformation of human society.<br> You are warmly invited to help it attain its full potential.'
       point1: 'Watch Video'
       point2: 'Learn more'
       point3: 'Sign Up'
@@ -54,25 +53,24 @@ en:
       header: 'Learn more about United Earth'
       what:
         header: 'What is United Earth?'
-        content1: 'United Earth serves to promote and facilitate a whole-systems transformation of human society by providing an open, inclusive and egalitarian meeting space for all life-affirming persons and groups to unite and collaborate.'
-        content2: 'United Earth is basically a “universal docking-station” for individuals, groups and communities; for us to share our diverse knowledge, ideas, visions, solutions, skills, tools, technologies, resources and transition strategies on one common platform and focus our collective intelligence and actions to co-create a peaceful, free, just and healthy world for everyone.'
+        content1: 'United Earth serves to promote and facilitate a globally co-created cultural transition by providing an open, inclusive and egalitarian meeting space for all life-affirming persons and groups to unite and collaborate.'
+        content2: "United Earth is basically a 'universal docking-station' for both individuals and groups where we can all share and discover our diverse wealth of knowledge, ideas, visions, skills, tools, technologies, resources and transition strategies on one common platform. Here we can focus our collective intelligence and cooperative actions towards a peaceful, free, just and healthy world for everyone."
       why:
         header: 'Why do we need global unity and collaboration?'
-        content1: 'Humanity urgently needs a new story to effectively address the multiple crises we are facing such as climate change, ecological destruction, war, economic inequality, etc. Today there is a rapidly growing understanding that all these adversities are inherently interconnected, and that they are essentially symptomatic manifestations of political and economic systems that have forsaken the welfare of The People and our planetary home.'
-        content2: "The untold empowering and uplifting news is that we already have the ecological solutions, social innovations, alternative political and economic models, and the living examples to solve the World's problems. NOW is the time to realise that the change we seek is entirely in our hands - when we join them together. We are One Human Family, regardless of religion, race, ideology, or political borders. As a global collaborative, we can inspire and bring about monumental change to the planet."
+        content1: 'Humanity urgently needs a new story to effectively address the mutiple crises we are facing such as climate change, ecological destruction, war, economic inequality, etc. Today there is a rapidly growing understanding that all these adversities are inherently interconnected, and that they are all symptoms of political and economic systems which are disconnected from the welfare of humanity and our home.'
+        content2: "The untold empowering and uplifting news is that we already have the ecological solutions, social innovations, alternative political and economic models, and the living examples to solve the world's problems. NOW is the time to realise that the change we seek is entirely in our hands - when we join them together. We are One Human Family, regardless of religion, race, ideology, or political borders. As a unified global collaborative, we can inspire and bring about monumental change to the planet."
       how:
         header: 'How: An Open-invitation for Co-creation'
-        content1: "Inviting planetary unity and collaboration has to be the most ambitious collective endeavour in human history. And clearly this would not be imaginable without today's widespread availability and accessibility of the Internet. The fact that most people and all groups working for a brighter future are connected to the Internet means there is a powerful opportunity for us to come together for a common cause and vision now."
-        content2: "Due to the magnitude of this vision, we foresee this snowball of global unity beginning with people and groups who a) recognise the potential and possibilities of our intentional unification, and b) are willing and able to put aside our ideological differences for the greater good of all."
-        content3: "Unified collaboration at the scale United Earth is inviting will undoubtedly attract global mainstream attention to the wealth of existing intelligent and alternative models and solutions so we can create the more beautiful and abundant world we know is possible. Ultimately, unity and our collective Global Transition is a choice that every one of us needs to make."
-        content4: "The primary focus, at this stage in the development of United Earth, is building our global community of United Earth members and collaborators. As we grow together, so too will the tools and features of this website."
+        content1: "Inviting planetary unity and collaboration has to be the most ambitious collective endeavour in human history. And clearly this would not be imaginable without today's widespread availability and accessibility of the Internet. The fact that most people and all groups working for a brighter future are connected to the Internet means that we now have a powerful opportunity to come together for this common cause and vision."
+        content2: 'In light of the magnitude of this vision, we foresee the snowballing of global unity beginning with people and groups who a) recognise the potential and possibilities of our intentional unification, and b) are willing and able to put aside ideological differences for the greater good of all.'
+        content3: "A unified global collaboration at this scale will inevitably attract worldwide mainstream attention to the wealth of existing alternative models and possibilities that are ignored by the corporate media. By openly inviting cooperation with the mainstream we affirm that United Earth is an inclusive responsibility to be realised and enjoyed together."
+        content4: "At this stage in the development of United Earth, we are building the platform where we can gather our global community of members and collaborators. As we grow together, so too will the tools and features of this website."
 
     signup:
       header: 'Your Call to Action!'
-      intro: "Everyone is invited to co-create! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
+      intro: "Everyone is invited! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history <i>together</i>!"
 
       counter:
-        header: 'Our emerging United Earth Community Counters:'
         groups: 'groups'
         individuals: 'individuals'
         text: 'are supporting United Earth!<br>See their profiles below...'
@@ -85,7 +83,6 @@ en:
     header: 'Add your voice for global unity and collaboration'
 
   user_settings:
-    header: 'Your profile'
     contribution: 'Please indicate how you would you like to contribute to United Earth. By ticking a box you agree to be contacted by a team facilitator'
     update_user:
       success: 'User info updated!'
@@ -104,14 +101,7 @@ en:
       delete-button: 'Remove'
       edit-button: 'Edit'
       confirm-delete: 'Really delete group %{group_name}?'
-    save: 'Save'
-    share:
-      text: 'The most effective action you can take towards co-creating global unity is to let all your friends, family and networks know that United Earth <i>is happening</i>! Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
-      templates:
-        head: 'Letter Templates'
-        personal: 'Personal invitation'
-        group: 'Group invitation'
-        changemaker: 'Invitation of change-maker'
+
   activerecord:
       attributes:
         user:
@@ -119,9 +109,9 @@ en:
           lastname: 'Last name:'
           email: 'Email Address:'
         personal_info:
-          add_voice: 'Share Enthusiasm for United Earth and tick the box if you would like it to be shared on the Home page:'
-          newsletter: 'Receive the United Earth newsletter:'
-          public_feedback: 'Share your ideas, questions, constructive criticism, etc.:'
+          add_voice: 'Add your voice for global unity'
+          newsletter: 'Subscribe to the United Earth newsletter'
+          public_feedback: 'Your public feedback for our landing page:'
 
           contrib_admin: 'Administration'
           contrib_coord: 'Coordination'
@@ -176,10 +166,10 @@ en:
       intro:
         header: 'Introduction'
         content1: 'The Global Transition Gathering (GTG) is an unprecedented event designed to promote planetary unity, healing, cooperation and solutions-awareness. The first GTG will take place at the same time as the COP21 - the UN Climate Change Conference of the Parties - and the COM21 - the Conference of the Movements - in Paris on December 5th & 6th, 2015.'
-        content2: 'Essentially The Global Transition Gathering is the “planetary extension” of the COM21- with the broader vision of globally promoting whole-systems transformation and building local, collaborative connections among the movements. The invitation is for all UE allies to independently organise events that reflect their particular interest and passion, e.g. tree planting, festival, meditation, prayer, water ceremony, etc. Each group will register their event on the United Earth website so others can easily connect on the local level.'
+        content2: 'Essentially The Global Transition Gathering is the "planetary extension” of the COM21- with the broader vision of globally promoting whole-systems transformation and building local, collaborative connections among the movements. The invitation is for all UE allies to independently organise events that reflect their particular interest and passion, e.g. tree planting, festival, meditation, prayer, water ceremony, etc. Each group will register their event on the United Earth website so others can easily connect on the local level.'
       proposal:
         header: 'Program proposal'
-        content1: '<b>Saturday, December 5th</b> is dedicated to healing the past - especially towards women and the First Peoples - by way of a Global Truth, Reconciliation and Forgiveness Ceremony. We believe that for humanity to move into a new paradigm of sharing and cooperation we must first collectively bring the reconciliation and healing of our past actions and violations into light. This “Global Medicine Wheel” will be co-created by voluntary groups around the world. Furthermore there will be special events facilitated with the guidance of indigenous and spiritual leaders and Elders to be held at sacred sites on all the continents. To complete this momentous ceremony we intend to collectively channel this powerful and transformative energy of forgiveness and healing into a unified prayer and intention for the restoration of Mother Earth.'
+        content1: '<b>Saturday, December 5th</b> is dedicated to healing the past - especially towards women and the First Peoples - by way of a Global Truth, Reconciliation and Forgiveness Ceremony. We believe that for humanity to move into a new paradigm of sharing and cooperation we must first collectively bring the reconciliation and healing of our past actions and violations into light. This "Global Medicine Wheel” will be co-created by voluntary groups around the world. Furthermore there will be special events facilitated with the guidance of indigenous and spiritual leaders and Elders to be held at sacred sites on all the continents. To complete this momentous ceremony we intend to collectively channel this powerful and transformative energy of forgiveness and healing into a unified prayer and intention for the restoration of Mother Earth.'
         content2: '<b>Sunday, December 6th</b> is dedicated to celebrating our collective intention to work together to heal our Mother Earth - and to help bring awareness of alternative solutions to the forefront of mainstream attention. To promote a whole-systems transformation, we are inviting an infinitely creative, synchronised celebration through music, art, community, Earth restoration, etc. The only criterion is our collective intention to unite, cooperate and co-create a peaceful, free, just and abundant Earth for all, now and in the future.'
         content3: 'YES, this will be the biggest conscious and unified gathering the world has ever seen!'
 
@@ -211,7 +201,7 @@ en:
       motivation: "The motivation of a United Earth to be participating in the inaugural Solutions Summit is twofold:"
       motivation-block1: "1. To highlight the fact, both to the people at the summit and to the world at large, that we already have a vast wealth of tried-and-tested solutions for all the problems humanity is facing. For the welfare of humankind and our planetary home it is vital that we recognise the fact that the crises we are facing are not for a lack of solutions and alternatives, but for a lack of political will and capacity to implement them."
       motivation-block2: "2. We are here to take advantage of this Solutions Summit, at the world's most recognised international political platform, to invite all governments, organisations, representatives - and especially The People they represent - to unite and collaborate for a whole-systems, solutions-based transformation."
-      closing-block1: "In one of the closing remarks we requested that <b>“since this application is submitted in the interest of all concerned and peace-loving citizens of Earth, should you decide to refuse it, we ask that you extend the courtesy of giving us the reason(s) why?”</b>"
+      closing-block1: 'In one of the closing remarks we requested that <b>"since this application is submitted in the interest of all concerned and peace-loving citizens of Earth, should you decide to refuse it, we ask that you extend the courtesy of giving us the reason(s) why?”</b>'
       closing-block2: "The fact that this application was rejected comes as no surprise. No reason for refusal was provided. One wonders if they even read it since the speakers at the summit were the same groups that have been presenting at the UN for over a decade - some of whom didn't even apply!"
       closing-block3: "Clearly this affirms that we, The People, cannot continue to look to politicians to take the urgent, informed and wise actions necessary - not only to prevent impending ecological, economic and social collapses - but to create a harmonious and healthy world for all people and our future generations to enjoy."
       button: 'Read whole Application'
@@ -221,25 +211,6 @@ en:
       header: 'Solutions'
       quote: 'Though the world´s problems are becoming increasingly complex, the solutions remain embarrassingly simple.'
       author: '- Bill Mollison<br>(Co-originator of Permaculture Design)'
-
-    localisation:
-      header: 'Localisation'
-      quote: ' Economic localisation is the key to sustaining biological and cultural diversity – to sustaining life itself. The sooner we shift towards the local, the sooner we will begin healing our planet, our communities, and ourselves.'
-      author: '- Helena Norberg-Hodge'
-      content: 'Most social and ecological innovators will agree that the most fundamental criterion for all our political, social and economic reform is re-localisation. This means bringing governance & decision-making, livelihoods & businesses, food & energy production, water, waste & biodiversity management back to a locally directed and a bio-regionally sustainable level. Through these practical collective efforts, as exemplified by the Transition Town movement, we can build vibrant local economies and resilient communities.'
-
-    understanding:
-      header: 'Understanding “The problem”'
-      quote1: 'The few who understand the system will either be so interested in its profits or be so dependent upon its favours that there will be no opposition from that class, while on the other hand, the great body of people, mentally incapable of comprehending the tremendous advantage that capital derives from the system, will bear its burdens without complaint, and perhaps without even suspecting that the system is inimical to their interests.'
-      author1: '- The Rothschild brothers of London writing to associates in New York, 1863.'
-      content1: 'To effectively design and implement solutions we must first understand the nature and root cause of our problems. Today there can be little doubt that human society at large is completely ruled by money. The vast majority of people spend most of their time, energy and intelligence thinking or worrying about how to acquire, accumulate or spend money. Money itself is not the problem. Only when we understand that the fractional reserve banking system is designed to impose and maintain a paradigm of scarcity and inequality, can we begin to comprehend the extent to which it impacts all other aspects of human society - with all its resulting ramifications, i.e. greed, violence, poverty, etc. '
-      quote2: 'There is without a doubt a mega-crisis that we are facing in the coming years. And the big elephant in the living room is the money problem. Unfortunately most people who are active in the sustainability movement and the environmental movement don’t understand the nature of this problem. We are not going to make any significant headway with sustainability or restoration of the environment until we solve the money problem.'
-      author2: '- Thomas H. Greco, Currency Design Specialist<br>(From The Money Fix)'
-      content2: 'Numerous documentaries exposing the fraudulence of the central banking system can be found on the Internet. The Money Fix is one documentary that provides both critical information as well as some key alternatives. (Please see the solutions-awareness toolkit below for a variety of relevant videos)'
-      content3: 'United Earth, along with numerous New Economy groups, invites humanity into a new paradigm of economic equality, Universal Basic Income, circular economies, moneyless exchanges, sharing and gifting. We have the economic models to create a responsible abundance for everyone: a world where everyone’s basic rights - healthy food, clean water, comfortable shelter and renewable energy - are easily met; a world where all people can fully develop and express their unique talents and creativity, free from any financial concerns. To co-create this world we need to collectively choose it.'
-      content4: 'United Earth is co-creating a global platform where we can all express this choice.'
-      content5: 'Living in a moneyless community or town will soon become a matter of choice for each of us. During the transition, however, there are numerous available tools such as cryptocurrencies, mutual credit unions, community exchange systems that we can communally choose from.'
-      content6: 'One of the collaborators of United Earth is the Earth Dollar, who are currently developing a cryptocurrency backed by land and natural capital, as a means for ensuring financial mobility to fund our collective Global Transition. For more information, please refer to the United Earth application for the United Nations Inaugural Solutions Summit.'
 
     abundance:
       header: 'The Abundance of Solutions'
@@ -268,17 +239,27 @@ en:
   about:
     header:
       title: 'About United Earth'
+    vision:
+      header: 'The Vision'
+      content: 'A single global platform, where we gather and share our experience, knowledge and inspiration, that focuses our personal actions and collective power into the co-creation of a peaceful, free, just and healthy world for everyone.'
+      header: 'The Mission'
+      content1: 'To promote planetary awareness about the following premises:'
+      list:
+        a: 'For humanity and all life to thrive we will need to fundamentally re-design how we live on our planet.'
+        b: 'We already have numerous practical solutions and alternatives.'
+        c: 'The latent potential of uniting with all the people who are longing and acting for a better world to work together for a whole-systems transformation of human society.'
+      content2: 'To realise our collective potential, United Earth offers a global platform for exploring and promoting unity, cultural transitioning, and inter-disciplinary partnership and collaboration. Local actions and intentions of every willing person, group, village and city on the planet will be part of a community-led, globally-supported transition towards a low-impact, high-quality standard of living in a healthy biosphere.'
+      header: 'The Objectives'
+      content1: '<b>Objective 1</b>: To invite and facilitate an intentional unification among all the millions of people and thousands of groups working for environmental protection and stewardship, social justice and innovation, Indigenous rights and culture, personal development, etc. We put aside our differences to collaborate for the greater good of all and inspire more and more people to join in, learn about and become a part of a human culture of harmony, diversity and abundance.'
+      content2: '<b>Objective 2</b>: Through our unparalleled and inclusive unification we will effectively attract worldwide mainstream attention to the wealth of ecological solutions, social innovations, and alternative political & economic models as showcased on this platform.'
+      content3: '<b>Objective 3</b>: Using this platform we will focus our collective intelligence to co-create, disseminate and implement a clear and lucid plan to progressively and peacefully transition from our current failing systems into new paradigm models that respect and serve all life and the Earth.'
     wiki:
       header: 'Our wiki'
-      text: 'To find out more about United Earth: A brief history, our objectives, our visions, United Earth’s relationship with partnering organisations, collaboration tools and more please visit our wiki.'
-      link: 'The United Earth Wiki'
-
+      text: "To find out more about United Earth: A brief history, Our Common Ground, United Earth's relationship with partnering organisations, collaboration tools and more please visit our wiki."
+      link: 'United Earth Wiki'
     pioneers:
-      header: 'United Earth Pioneers & Pioneering Collaborators'
-      content1: 'The vision of global unity and collaboration for a whole-systems transformation does not come from any one person or group. It has been progressively emerging through our collective consciousness for many years now. The fact that you are exploring this website is one of many “living” proofs that we have reached the critical mass required for our collective vision to come into its full and monumental manifestation. We are all equally responsible for co-creating a United Earth.'
-      content2: 'In the spirit of transparency - as well as an opportunity to present a new paradigm networking tool - we wish to introduce the United Earth pioneering team and demonstrate a “holonic mapping” co-creation operating environment called Noomap being developed by one of our first collaborators. Both United Earth and Noomap are openly inviting all interested and like-minded people and groups to share skills, ideas and resources to co-create a synergistic collaboration platform that can facilitate our global transition. (For more information on United Earth’s relationship structure with collaborators please see the wiki)'
-      content3: 'You are welcome to explore the Holon below by following the instructions in the text box on the right...'
-
+      header: 'United Earth Pioneers'
+      
   donations:
     title:
       header: 'Donate'
