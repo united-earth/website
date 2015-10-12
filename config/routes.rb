@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   scope "admin" do
     resources :users
     resources :groups, except: [:new, :create]
+    get '/', to: redirect('/admin/users')
   end
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/, path_prefix: "/:locale" do

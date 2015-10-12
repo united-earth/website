@@ -6,5 +6,9 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body{class: ('hide-header' if @at_landing)}
+  %body.admin{class: ('hide-header' if @at_landing)}
+    .menu
+      %ul
+        %li= link_to 'Users', '/admin/users'
+        %li= link_to 'Groups', '/admin/groups'
     = yield

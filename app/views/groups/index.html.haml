@@ -9,17 +9,17 @@
       %th Country
       %th Website
       %th Logo
-      %th Cat ecological
-      %th Cat environment
-      %th Cat indi
-      %th Cat social
-      %th Cat economics
-      %th Cat political
-      %th Cat animal
-      %th Cat activism
-      %th Cat tech
-      %th Cat holistic
-      %th Cat conscious
+      %th ecological
+      %th environment
+      %th indi
+      %th social
+      %th economics
+      %th political
+      %th animal
+      %th activism
+      %th tech
+      %th holistic
+      %th conscious
       %th Comment
       %th
       %th
@@ -34,22 +34,20 @@
         %td= group.country
         %td= group.website
         %td= group.logo
-        %td= group.cat_ecological
-        %td= group.cat_environment
-        %td= group.cat_indi
-        %td= group.cat_social
-        %td= group.cat_economics
-        %td= group.cat_political
-        %td= group.cat_animal
-        %td= group.cat_activism
-        %td= group.cat_tech
-        %td= group.cat_holistic
-        %td= group.cat_conscious
+        %td= check_mark group.cat_ecological
+        %td= check_mark group.cat_environment
+        %td= check_mark group.cat_indi
+        %td= check_mark group.cat_social
+        %td= check_mark group.cat_economics
+        %td= check_mark group.cat_political
+        %td= check_mark group.cat_animal
+        %td= check_mark group.cat_activism
+        %td= check_mark group.cat_tech
+        %td= check_mark group.cat_holistic
+        %td= check_mark group.cat_conscious
         %td= group.comment
         %td= link_to 'Show', group
-        %td= link_to 'Edit', edit_group_path(group)
-        %td= link_to 'Destroy', group, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        - if false
+          %td= link_to 'Edit', edit_group_path(group)
+          %td= link_to 'Destroy', group, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
-
-= link_to 'New Group', new_group_path
