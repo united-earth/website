@@ -32,9 +32,9 @@ en:
   landing:
     tagline: 'Unity - Collaboration - Transformation'
     prophecy:
-      header: ''
-      content: '<i>Our task is to unite humanity throughout the world.</i>'
-      footer: '– Nelson Mandela (First meeting of the Elders, South Africa, 2007)'
+      header: '<i>Our task is to unite humanity throughout the world.</i>'
+      content: '– Nelson Mandela'
+      footer: '(First meeting of the Elders, South Africa, 2007)'
 
     roadmap:
       header: 'An Open Invitation for Co-creation'
