@@ -54,7 +54,7 @@
         border: 2px solid rgba(255,255,255,0.3)
         border-radius: 20px
         vertical-align: middle
-        line-height: 34px
+        line-height: 30px
 
     &_item-selected
       .roadmap__points_item_ball
@@ -352,8 +352,18 @@
   .landing
     .header
       height: calc(100vh - 160px)
+      &__prophecy
+        &__header
+          font-size: 22px
+        &__content
+          font-size: 18px
+        &__footer
+          font-size: 12px
+
     .header__shade
-      height: calc(100vh - 160px)§
+      height: calc(100vh - 160px)
+
+
     .learn-more__subnavi
       display: none
 
@@ -373,7 +383,7 @@
       bottom: 0
 
   .roadmap
-    height: 484px
+    height: 660px
     width: 100%
     padding-top: 135px
     text-align: center
@@ -393,7 +403,7 @@
           display: inline-block
 
         &_ball
-          margin: 5px
+          margin: 5px 1px 5px 5px
           width: 17px
           height: 17px
           border: 1px solid rgba(255,255,255,0.3)
@@ -401,4 +411,8 @@
           vertical-align: middle
           line-height: 15px
           font-size: 9px
+
+    &__content
+      font-size: 16px
+      text-align: justify
 

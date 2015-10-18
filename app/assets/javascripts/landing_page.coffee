@@ -7,12 +7,12 @@ $(document).on 'ready page:load', () ->
   if $('.landing').size() > 0
     $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
-      if this.scrollTop < 700
+      if $('.header__logo').offset().top > 0
         $('body').addClass('hide-header')
       else
         $('body').removeClass('hide-header')
 
-      if $('.roadmap .roadmap__points').offset().top < 115
+      if $('.roadmap .roadmap__points').offset().top < 90
         $('body').addClass('stick-roadmap')
       else
         $('body').removeClass('stick-roadmap')
