@@ -12,7 +12,7 @@ $(document).on 'ready page:load', () ->
       else
         $('body').removeClass('hide-header')
 
-      if this.scrollTop > stickRoadmapScrollPos
+      if $('.roadmap .roadmap__points').offset().top < 115
         $('body').addClass('stick-roadmap')
       else
         $('body').removeClass('stick-roadmap')
