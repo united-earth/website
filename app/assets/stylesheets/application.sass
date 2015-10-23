@@ -1,6 +1,8 @@
+
 @import 'bootstrap-sprockets'
 @import 'bootstrap'
 @import 'colors'
+@import 'abstract'
 @import 'landing_page'
 @import 'fonts'
 @import 'menu'
@@ -47,28 +49,6 @@
 .notice
   margin: 20px 0
   color: $accentColor
-
-%button
-  border-radius: 4px
-  margin: 6px 0
-  padding: 5px 10px
-  text-align: center
-  color: white
-  text-transform: uppercase
-  cursor: pointer
-  text-decoration: none
-  &:hover
-    color: white
-    text-decoration: none
-
-.accent-button
-  @extend %button
-  display: block
-  width: 250px
-  height: 50px
-  line-height: 50px
-  padding: 0 !important
-  background-color: $accentColor
 
 .share-buttons
   position: fixed

@@ -9,9 +9,27 @@
       %li.menu__list_item{ class: ('active' if @at_solutions) }= link_to t('menu.solutions'), solutions_path
       %li.menu__list_item{ class: ('active' if @at_donations) }= link_to t('menu.donate'), donations_path
       - unless current_user.nil?
-        %li.menu__list_item{ class: ('active' if @at_donations) }=  link_to t('menu.settings'), user_settings_path, class: 'accent-button'
+        %li.menu__list_item=  link_to t('menu.settings'), user_settings_path, class: 'accent-button'
       - else
-        %li.menu__list_item= link_to t('menu.signup'), new_user_registration_path, class: 'accent-button'
+        %li.menu__list_item.menu__unite-button= link_to t('menu.signup'), new_user_registration_path, class: 'accent-button'
+        %li.menu__overlaybox
+          .menu__overlaybox_title
+            .menu__overlaybox_title_head
+              Add your voice
+            .menu__overlaybox_title_sub
+              for global unity and collaboration!
+          .menu__overlaybox_signups
+            .menu__overlaybox_individuals
+              .menu__overlaybox_number= @number_of_all_users
+              individuals
+
+            .menu__overlaybox_section and
+            .menu__overlaybox_groups
+              .menu__overlaybox_number= @groups.size
+              = t('landing.signup.counter.groups')
+            .menu__overlaybox_section have already signed up.
+          .menu__overlaybox_button
+            = link_to "Yes, I'm in!", new_user_registration_path, class: 'menu__overlaybox_signup-button'
 
     - unless current_user.nil?
       .menu__session

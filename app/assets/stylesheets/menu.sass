@@ -14,7 +14,6 @@
   background-color: white
   -webkit-transition: height 0.3s
   transition: height 0.3s
-  overflow: hidden
   z-index: 2
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10)
 
@@ -29,8 +28,10 @@
     display: none
 
   &__list
+    position: relative
     float: right
     margin: 0
+    padding-right: 155px
     list-style: none
 
     &_item
@@ -48,6 +49,53 @@
 
       &.active
         @extend %active
+
+  &__unite-button
+    display: none
+  &__overlaybox
+    position: absolute
+    top: 0
+    right: 0
+    margin-right: -90px
+    padding-top: 120px
+    background: $accentColor
+    width: 180px
+    height: 300px
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.8)
+    color: white
+    &_title
+      position: absolute
+      top: 30px
+      left: 50%
+      transform: translateX(-50%)
+      width: 151px
+
+      &_head
+        font-size: 20px
+        font-weight: bold
+      &_sub
+        font-style: italic
+    &_signups
+      text-align: center
+    &_number
+      display: inline
+
+    &_individuals, &_groups
+      display: inline
+      font-weight: bold
+
+    &_button
+      position: relative
+      padding: 20px
+      text-align: center
+
+    &_signup-button
+      @extend .accent-button
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      background-color: $green
+
 
   .accent-button
     width: 130px
@@ -94,7 +142,7 @@
   overflow: hidden
   background-color: $darkGrey
   color: white
-  z-index: 3
+  z-index: 1
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10)
 
   ul
@@ -120,12 +168,21 @@ body.has-submenu
   .submenu
     display: inline-block
 
+@media screen and (max-width: 1100px)
+  .menu
+    &__list
+      padding-right: 0
+    &__unite-button
+      display: inline-block
+    &__overlaybox
+      display: none
 
 
 @media screen and (max-width: $mobile)
   .menu
     height: 70px
     z-index: 5
+    overflow: hidden
     &__logo
       float: left
       height: 90px
