@@ -5,6 +5,12 @@ $(document).on 'ready page:load', () ->
   signupScrollPos = 2750
   signupScrollPos = 3500 if window.mobilecheck()
   if $('.landing').size() > 0
+    $('.header__arrow-down').click ()->
+      target = $('#roadmap')
+      $('.parallax-container').animate({
+        scrollTop: target.offset().top
+      }, 500);
+
     $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
       if $('.header__logo').offset().top > 0

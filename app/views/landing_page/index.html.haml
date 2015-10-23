@@ -33,10 +33,12 @@
       .header__prophecy__content= raw t('landing.prophecy.content')
       .header__prophecy__footer= raw t('landing.prophecy.footer')
 
+    = fa_icon 'arrow-down', class: 'header__arrow-down'
+
     =image_tag 'logo_gray_gold.svg', class: 'header__logo'
     .header__tagline= t('landing.tagline')
 
-  .roadmap
+  .roadmap#roadmap
     .roadmap__header= t('landing.roadmap.header')
     .roadmap__content= raw t('landing.roadmap.content')
 

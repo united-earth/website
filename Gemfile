@@ -37,6 +37,7 @@ gem 'mini_magick'
 gem 'simple_form'
 gem 'meta-tags'
 gem 'social-share-button'
+gem 'font-awesome-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
