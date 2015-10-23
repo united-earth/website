@@ -10,6 +10,22 @@
     = display_meta_tags site: 'United Earth'
     %link{rel: 'shortcut icon', href: 'favicon.ico'}
   %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu)], 'data-logged-in' => (not current_user.nil?)}
+    %script
+      window.fbAsyncInit = function() {
+      FB.init({
+      appId      : '1513762645613611',
+      xfbml      : true,
+      version    : 'v2.5'
+      });
+      };
+      (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
     - unless @at_user_settings
       %script{type:'text/javascript', src:'//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js', 'data-shr-siteid'=>'85322f374cbdf9a79b3139a0b0dabcfc', 'data-cfasync'=>'false', async: 'async'}
     = render 'layouts/menu'
