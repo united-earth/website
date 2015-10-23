@@ -5,6 +5,17 @@ $(document).on 'ready page:load', () ->
   signupScrollPos = 2750
   signupScrollPos = 3500 if window.mobilecheck()
   if $('.landing').size() > 0
+    $('[data-collapse]').each (index, element)->
+      target = $(element).attr('data-collapse')
+      target = $(target)
+      $(element).click ()->
+        target.toggleClass('in')
+        $(element).toggleClass('in')
+        if target.hasClass('in')
+          target.get(0).style.height = target.get(0).scrollHeight.toString() + "px"
+        else
+          target.get(0).style.height = 0
+
     $('.header__arrow-down').click ()->
       target = $('#roadmap')
       $('.parallax-container').animate({
