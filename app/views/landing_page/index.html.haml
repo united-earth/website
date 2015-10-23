@@ -114,36 +114,22 @@
           .learn-more__items_item_content Everyone is invited! To unify our vast and diverse Human Family each one of us is called to contribute in our own unique way. We look forward to welcoming new co-creators. Let's make history together!
 
   .landing__signup#signup
-    .ue-container
-      .landing__signup__header=t('landing.signup.header')
-      .landing__signup__intro=raw t('landing.signup.intro')
+    .landing__signup__counter
+      .landing__signup__counter_header United Earth Community Counter
+      .landing__signup__counter_individuals
+        .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
+      .landing__signup__counter_groups
+        .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
 
-      .landing__signup__counter
-        .landing__signup__counter_header=t('landing.signup.counter.header')
-        .landing__signup__counter_individuals
-          .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
-        .landing__signup__counter_groups
-          .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
+    - if false #current_user.nil?
+      .landing__signup__signup
+        = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
 
-      - if current_user.nil?
-        .landing__signup__signup
-          = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
+    .landing__signup__groups
+      - @groups.each do |group|
 
-      .landing__signup__groups
-        - @groups.each do |group|
-
-          = link_to make_fullpath(group.website), class: 'landing__signup__item' do
-            .overlay
-            .landing__signup__item_name.name= group.name
-            .landing__signup__item_image= image_tag group.logo.profile.url
-            .landing__signup__item_info.info= group.comment
-
-      .landing__signup__individuals
-        - if false
-          - @users.each do |user|
-            .landing__signup__item
-              .overlay
-              .landing__signup__item_name.name= "#{user.firstname} #{user.lastname}"
-              .landing__signup__item_image= image_tag user.avatar.profile.url
-              .landing__signup__item_info.info= user.personal_info.public_feedback
-
+        = link_to make_fullpath(group.website), class: 'landing__signup__item' do
+          .overlay
+          .landing__signup__item_name.name= group.name
+          .landing__signup__item_image= image_tag group.logo.profile.url
+          .landing__signup__item_info.info= group.comment
