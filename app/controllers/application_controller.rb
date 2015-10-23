@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_locale
   before_filter :set_meta
+  before_filter :set_users_groups
 
   def set_submenu
     @has_submenu = true
@@ -14,6 +15,12 @@ class ApplicationController < ActionController::Base
   private
   def set_locale
     I18n.locale = params[:locale]
+  end
+
+  def set_users_groups
+    @groups = Group.all.active
+    @number_of_all_users = User.all.size
+    @users = User.all.voice_added
   end
 
   def set_meta

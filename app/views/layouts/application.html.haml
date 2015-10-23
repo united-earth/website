@@ -9,7 +9,7 @@
     = csrf_meta_tags
     = display_meta_tags site: 'United Earth'
     %link{rel: 'shortcut icon', href: 'favicon.ico'}
-  %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu)], 'data-logged-in' => (not current_user.nil?)}
+  %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu), ('logged-in' if not current_user.nil?)], 'data-logged-in' => (not current_user.nil?)}
     %script
       window.fbAsyncInit = function() {
       FB.init({
