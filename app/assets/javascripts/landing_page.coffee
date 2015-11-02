@@ -59,7 +59,7 @@ $(document).on 'ready page:load', () ->
         $('.submenu .roadmap__points_item-2').removeClass('roadmap__points_item-selected')
 
 
-      if this.scrollTop > signupScrollPos
+      if $('#signup').offset().top < 500
         $('.submenu .roadmap__points_item-2').addClass('roadmap__points_item-check')
         $('.submenu .roadmap__points_item-3').addClass('roadmap__points_item-selected')
       else
