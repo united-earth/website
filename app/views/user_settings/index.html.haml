@@ -2,6 +2,15 @@
   = image_tag 'logo.svg', class: 'user-settings__background__image'
 
 .user-settings.ue-container
+
+  .user-settings__buttons
+    .col-sm-6
+      =link_to t('user_settings.personal_info_button'), personal_info_path, class: 'user-settings__info-button'
+    .col-sm-6
+      =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
+
+  %hr
+    
   .user-settings__user
     .user-settings__user_header= t('user_settings.header')
     .col-sm-6
@@ -50,13 +59,6 @@
           %li= link_to t('user_settings.share.templates.group'), '/UE_Group_Invitation_Template.pdf', target: '_blank'
           %li= link_to t('user_settings.share.templates.changemaker'), '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
           %li= t('user_settings.share.templates.indigenous')
-
-  %hr
-  .user-settings__buttons
-    .col-sm-6
-      =link_to t('user_settings.personal_info_button'), personal_info_path, class: 'user-settings__info-button'
-    .col-sm-6
-      =link_to t('user_settings.new_group_button'), new_group_path, class: 'user-settings__info-button'
 
   %hr
   .user-settings__group
