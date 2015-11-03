@@ -249,6 +249,10 @@
     padding: 50px
     margin: 0 auto
     width: 1000px
+    &__header-image
+      width: 1000px
+      max-width: 100%
+      margin: 30px auto
 
     +clearfix
     &__header
@@ -262,6 +266,7 @@
       text-align: justify
 
     &__counter
+      position: relative
       &_header
         @extend %landing-subheader
         text-align: left
@@ -277,6 +282,7 @@
         position: absolute
         width: 200px
         height: 50px
+        top: 20px
         margin: 0 0 0 20px
         -webkit-transform: skew(-20deg)
         -moz-transform: skew(-20deg)
@@ -293,11 +299,9 @@
           text-transform: uppercase
 
       &_individuals
-        left: 515px
-        top: 75px
+        left: 470px
       &_groups
-        left: 745px
-        top: 75px
+        left: 700px
         z-index: 3
       &_text
         margin: 80px 0
