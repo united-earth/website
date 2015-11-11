@@ -4,5 +4,7 @@
     =link_to 'http://www.com21.org' do
       =image_tag 'actions/com21/header.png', class: 'actions__header_image'
     %h1.actions__title= t('actions.com21.title')
+    .actions__subtitle-com21= t('actions.com21.subtitle')
+    .actions__date= raw t('actions.com21.date')
   - t('actions.com21.content').each do |key, value|
-    .actions__content= value
+    .actions__content= raw value
