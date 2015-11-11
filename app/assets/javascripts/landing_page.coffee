@@ -69,3 +69,10 @@ $(document).on 'ready page:load', () ->
       if loggedIn
         $('.roadmap__points *').addClass('roadmap__points_item-check')
 
+    $('.landing__signup__groups').slick {
+      adaptiveHeight: true,
+      slidesToShow: 4,
+      arrows: false,
+      dots: false,
+      autoplay: true
+    }
