@@ -47,20 +47,6 @@
           = f.submit t('user_settings.save')
 
   %hr
-
-  .user-settings__share
-    .user-settings__share_text= raw t('user_settings.share.text')
-    .user-settings__share_buttons= social_share_button_tag("United Earth", :popup => "true")
-    - if true
-      .user-settings__share_templates
-        .user-settings__share_templates_head= t('user_settings.share.templates.head')
-        %ul
-          %li= link_to t('user_settings.share.templates.personal'), '/UE_Personal_Invitation_Template.pdf', target: '_blank'
-          %li= link_to t('user_settings.share.templates.group'), '/UE_Group_Invitation_Template.pdf', target: '_blank'
-          %li= link_to t('user_settings.share.templates.changemaker'), '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
-          %li= t('user_settings.share.templates.indigenous')
-
-  %hr
   .user-settings__group
     - if @groups.size == 1
       .user-settings__group_list-header= t('user_settings.groups.header1')

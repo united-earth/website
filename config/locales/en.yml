@@ -106,7 +106,7 @@ en:
       confirm-delete: 'Really delete group %{group_name}?'
     save: 'Save'
     share:
-      text: 'The most effective action you can take towards co-creating global unity is to let all your friends, family and networks know that United Earth <i>is happening</i>! Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
+      text: 'Please share our website on Facebook, Twitter, or by email using the invitation letter template PDFs below:'
       templates:
         head: 'Letter Templates'
         personal: 'Personal invitation'

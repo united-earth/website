@@ -10,6 +10,18 @@
       %li.menu__list_item{ class: ('active' if @at_donations) }= link_to t('menu.donate'), donations_path
       - unless current_user.nil?
         %li.menu__list_item=  link_to t('menu.settings'), user_settings_path, class: 'accent-button'
+        %li.menu__overlaybox.menu__overlaybox-loggedin
+          .share__text= raw t('user_settings.share.text')
+          .share__buttons= social_share_button_tag("United Earth", :popup => "true")
+          - if true
+            .share__templates
+              .share__templates_head= t('user_settings.share.templates.head')
+              %ul
+                %li= link_to t('user_settings.share.templates.personal'), '/UE_Personal_Invitation_Template.pdf', target: '_blank'
+                %li= link_to t('user_settings.share.templates.group'), '/UE_Group_Invitation_Template.pdf', target: '_blank'
+                %li= link_to t('user_settings.share.templates.changemaker'), '/UE_Change-maker_Invitation_Template.pdf', target: '_blank'
+                %li= t('user_settings.share.templates.indigenous')
+
       - else
         %li.menu__list_item.menu__unite-button= link_to t('menu.signup'), new_user_registration_path, class: 'accent-button'
         %li.menu__overlaybox
