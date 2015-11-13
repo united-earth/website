@@ -16,11 +16,20 @@ $(document).on 'ready page:load', () ->
         else
           target.get(0).style.height = 0
 
-    $('.header__arrow-down').click ()->
-      target = $('#roadmap')
-      $('.parallax-container').animate({
-        scrollTop: target.offset().top
-      }, 500);
+    scrollLink = (linkItem, targetItem)->
+      $(linkItem).click ()->
+        target = $(targetItem)
+        $('.parallax-container').animate({
+          scrollTop: target.position().top - 40
+        }, 500);
+
+
+
+    scrollLink('.header__arrow-down', '#roadmap')
+    scrollLink('.roadmap__points_item-1', '#video')
+    scrollLink('.roadmap__points_item-2', '#learn-more')
+    scrollLink('.roadmap__points_item-3', '#signup')
+
 
     $('.header__bgvid').get()[0].playbackRate = 0.4
     $('.parallax-container').on 'scroll', (e) ->
