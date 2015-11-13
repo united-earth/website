@@ -38,8 +38,8 @@
     =image_tag 'logo_gray_gold.svg', class: 'header__logo'
     .header__tagline= t('landing.tagline')
 
-  .roadmap#roadmap
-    .roadmap__header= t('landing.roadmap.header')
+  .roadmap
+    .roadmap__header#roadmap= t('landing.roadmap.header')
     .roadmap__content= raw t('landing.roadmap.content')
 
     .roadmap__points
@@ -126,7 +126,7 @@
       .landing__signup__counter_groups
         .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
 
-    - if false #current_user.nil?
+    - if current_user.nil?
       .landing__signup__signup
         = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
 

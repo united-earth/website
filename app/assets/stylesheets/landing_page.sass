@@ -320,7 +320,6 @@
         overflow: hidden
 
       &__button
-        @extend .arrow_box
         position: relative
         display: inline-block
         top: 0 !important
@@ -328,7 +327,7 @@
         line-height: 50px
         width: 300px !important
         background-color: $green !important
-        margin: 80px auto !important
+        margin: 40px auto !important
         color: white
         text-decoration: none
         &:hover
@@ -443,15 +442,20 @@
       transform: none
       &__counter
         width: 100%
+        &_header
+          text-align: center
         &_individuals
           position: relative
-          float: left
-          left: 0px
-          top: 0px
+          left: 0
+          margin: 10px auto
         &_groups
           position: relative
-          left: 250px
-          top: 0
+          left: 0
+          margin: 10px auto
+
+      &__groups
+        margin-top: 40px
+        width: 100%
 
       &__signup__button
         width: 260px !important
@@ -460,7 +464,7 @@
       bottom: 0
 
   .roadmap
-    height: 440px
+    height: 610px
     width: 100%
     padding-top: 135px
     text-align: center
@@ -470,7 +474,7 @@
     &__points
       margin-top: 53px
       height: 78px
-      font-size: 14px
+      font-size: 12px
 
       &_item
         display: inline-block
