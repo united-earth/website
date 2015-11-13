@@ -120,7 +120,7 @@ en:
           lastname: 'Last name:'
           email: 'Email Address:'
         personal_info:
-          add_voice: 'Add your voice for global unity!'
+          add_voice: 'Add Your Voice for Global Unity and Collaboration!'
           newsletter: 'Subscribe to the United Earth newsletter'
           public_feedback: 'Your public feedback for our landing page:'
 
