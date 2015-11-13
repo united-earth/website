@@ -43,15 +43,15 @@
     .roadmap__content= raw t('landing.roadmap.content')
 
     .roadmap__points
-      = link_to '#video', class: 'roadmap__points_item roadmap__points_item-selected' do
+      .roadmap__points_item.roadmap__points_item-selected
         .roadmap__points_item_ball
           .figure 1
         .roadmap__points_item_text= t('landing.roadmap.point1')
-      = link_to '#learn-more', class: 'roadmap__points_item' do
+      .roadmap__points_item
         .roadmap__points_item_ball
           .figure 2
         .roadmap__points_item_text= t('landing.roadmap.point2')
-      = link_to '#signup', class: 'roadmap__points_item' do
+      .roadmap__points_item
         .roadmap__points_item_ball
           .figure 3
         .roadmap__points_item_text= t('landing.roadmap.point3')
