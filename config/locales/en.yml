@@ -38,7 +38,7 @@ en:
 
     roadmap:
       header: 'An Open Invitation for Co-creation'
-      content: 'A United Earth has begun. This website is a co-creative work-in-progress.<br>We have started building the framework of an open, inclusive and equality-based global platform for all people and groups wishing to unite and collaborate towards <i>a whole-systems transformation</i> of human society.<br>We warmly invite your contribution to help United Earth realise its full potential!'
+      content: 'A United Earth has begun. This website is a co-creative work-in-progress.<br>We have started building the framework of an open, inclusive and equality-based global platform for all people and groups wishing to unite and collaborate towards <i>a whole-systems transformation</i> of human society.<br>We warmly invite you to help United Earth realise its full potential!'
       point1: 'Watch Video'
       point2: 'Call to Action'
       point3: 'Community'
@@ -82,7 +82,7 @@ en:
         button: 'CO-CREATE UNITED EARTH HERE!'
 
   signup:
-    header: 'Add your voice for global unity and collaboration'
+    header: 'Add your voice for global unity and collaboration!'
 
   user_settings:
     header: 'Your profile'
@@ -120,7 +120,7 @@ en:
           lastname: 'Last name:'
           email: 'Email Address:'
         personal_info:
-          add_voice: 'Add your voice for global unity'
+          add_voice: 'Add your voice for global unity!'
           newsletter: 'Subscribe to the United Earth newsletter'
           public_feedback: 'Your public feedback for our landing page:'
 
