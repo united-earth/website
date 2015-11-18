@@ -129,3 +129,71 @@
   &__buttons
     margin-top: 50px
     text-align: center
+
+
+.learn-more
+  background-color: white
+  padding: 60px 0 0 0
+
+  &__header
+    @extend %landing-subheader
+    text-align: center
+
+  &__items
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    max-width: 762px
+    width: 100%
+
+
+    &_item
+      margin-bottom: 70px
+
+      &_header
+        @extend %landing-subheader
+        margin-bottom: 12px
+        color: black
+        &:hover
+          color: black
+          text-decoration: none
+      &_subheader
+        @extend %landing-subheader
+        margin-bottom: 8px
+        font-size: 18px
+        font-weight: bold
+      &_content
+        margin-bottom: 20px
+        text-align: justify
+      &_content-video
+        margin-bottom: 50px
+        text-align: center
+      &_seperator-heading
+        margin-bottom: 10px
+        font-weight: bold
+
+  &__subnavi
+    display: none
+    position: absolute
+    left: 50%
+    transform: translateX(-470px)
+
+    %item
+      width: 88px
+      height: 88px
+      color: $grey
+      border-radius: 44px
+      line-height: 88px
+      text-align: center
+      box-sizing: border-box
+
+    &_1
+      @extend %item
+    &_2
+      @extend %item
+    &_3
+      @extend %item
+
+    &_selected
+      background-color: $accentColor
+      color: white !important
