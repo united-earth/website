@@ -117,30 +117,31 @@
         - if false
           .learn-more__items_item_subheader Conscious Learning
 
-  .landing__signup#signup
-    = image_tag 'landing_page/community.jpg', class: 'landing__signup__header-image'
-    .landing__signup__counter
-      .landing__signup__counter_header United Earth Community Counter
-      .landing__signup__counter_individuals
-        .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
-      .landing__signup__counter_groups
-        .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
+  .landing__white-container
+    .landing__signup#signup
+      = image_tag 'landing_page/community.jpg', class: 'landing__signup__header-image'
+      .landing__signup__counter
+        .landing__signup__counter_header United Earth Community Counter
+        .landing__signup__counter_individuals
+          .landing__signup__counter_individuals_text= "#{@number_of_all_users} #{t('landing.signup.counter.individuals')}"
+        .landing__signup__counter_groups
+          .landing__signup__counter_groups_text= "#{@groups.size} #{t('landing.signup.counter.groups')}"
 
-    - if current_user.nil?
-      .landing__signup__signup
-        = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
+      - if current_user.nil?
+        .landing__signup__signup
+          = link_to t('landing.signup.button.button'), new_user_registration_path, class: 'landing__signup__signup__button'
 
-    .landing__signup__groups
-      - @groups.each do |group|
-        - unless group.logo.profile.url.nil?
-          = link_to make_fullpath(group.website), class: 'landing__signup__item' do
-            .overlay
-            .landing__signup__item_name.name= group.name
-            .landing__signup__item_image= image_tag group.logo.profile.url
-            .landing__signup__item_info.info= group.comment
+      .landing__signup__groups
+        - @groups.each do |group|
+          - unless group.logo.profile.url.nil?
+            = link_to make_fullpath(group.website), class: 'landing__signup__item' do
+              .overlay
+              .landing__signup__item_name.name= group.name
+              .landing__signup__item_image= image_tag group.logo.profile.url
+              .landing__signup__item_info.info= group.comment
 
 
-  .landing__comments
-    .landing__signup__counter_header Community Feedback
-    Please share your enthusiasm, criticism, questions and ideas:
-    <div class="fb-comments" data-href="http://united-earth.vision" data-numposts="50" data-width="100%"></div>
+    .landing__comments
+      .landing__signup__counter_header Community Feedback
+      Please share your enthusiasm, criticism, questions and ideas:
+      <div class="fb-comments" data-href="http://united-earth.vision" data-numposts="50" data-width="100%"></div>
