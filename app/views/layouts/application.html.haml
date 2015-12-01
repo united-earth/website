@@ -30,6 +30,8 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <meta property="fb:app_id" content="1513762645613611" />
+
   %body{class: [('hide-header' if @at_landing), ('has-submenu' if @has_submenu), ('logged-in' if not current_user.nil?)], 'data-logged-in' => (not current_user.nil?)}
     %script
       window.fbAsyncInit = function() {
