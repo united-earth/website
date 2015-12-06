@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://united-earth.vision/en</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/about</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/actions/com21</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/solutions</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/donations</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/users/sign_up</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/actions/gathering</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/actions/un-solutions-summit</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/UE_Solutions-Awareness_ToolKit.pdf</loc>
+  <lastmod>2015-12-01T23:23:23+00:00</lastmod>
+</url>
+<url>
+  <loc>https://united-earth.vision/en/users/sign_in</loc>
+</url>
+<url>
+  <loc>https://united-earth.vision/UnitedEarth-UNSolutionsSummitApplication.pdf</loc>
+  <lastmod>2015-12-01T23:23:23+00:00</lastmod>
+</url>
+</urlset>
