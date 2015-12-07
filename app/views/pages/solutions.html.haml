@@ -11,6 +11,11 @@
     .solutions__quote= raw t('solutions.abundance.quote')
     .solutions__quote-author= t('solutions.abundance.author')
 
+  .solutions__subheader= t('solutions.toolkit.header')
+  .solutions__content= t('solutions.toolkit.text')
+  .solutions__button
+    =link_to t('solutions.toolkit.button'), '/UE_Solutions-Awareness_ToolKit.pdf', class: 'accent-button', target: '_blank'
+
   .solutions__subheader= t('solutions.localisation.header')
   .solutions__content
     .solutions__quote= raw t('solutions.localisation.quote')
@@ -30,11 +35,6 @@
   .solutions__content= raw t('solutions.understanding.content4')
   .solutions__content= raw t('solutions.understanding.content5')
   .solutions__content= raw t('solutions.understanding.content6')
-
-  .solutions__subheader= t('solutions.toolkit.header')
-  .solutions__content= t('solutions.toolkit.text')
-  .solutions__button
-    =link_to t('solutions.toolkit.button'), '/UE_Solutions-Awareness_ToolKit.pdf', class: 'accent-button', target: '_blank'
 
   .solutions__subheader= t('solutions.portals.header')
   .solutions__content
