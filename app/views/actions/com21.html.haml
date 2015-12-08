@@ -7,9 +7,10 @@
     .actions__subtitle-com21= t('actions.com21.subtitle')
     .actions__date= raw t('actions.com21.date')
     .actions__program
-      =link_to 'Download Program', '/COM21_program.pdf', class: 'accent-button', target: '_blank'
+      =link_to 'View Program', '/COM21_program.pdf', class: 'accent-button', target: '_blank'
     .actions__map
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.5133969693547!2d4.496686651117786!3d51.88809437959994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433a1f8867f73%3A0xf1bf9f0a96e20ed0!2sSikkelstraat+35%2C+3075+CK+Rotterdam!5e0!3m2!1sen!2snl!4v1449491122984" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  .actions__title= t('actions.com21.why')
   - t('actions.com21.content').each do |key, value|
     .actions__content= raw value
 
