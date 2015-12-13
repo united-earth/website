@@ -22,6 +22,12 @@
     .solutions__quote-author= raw t('solutions.localisation.author')
   .solutions__content= raw t('solutions.localisation.content')
 
+  .solutions__subheader= t('solutions.transiation-plan.header')
+  .solutions__content= raw t('solutions.transiation-plan.text')
+  .solutions__button
+    =link_to t('solutions.transiation-plan.button'), '/UE_The_Global_Transition_Plan.pdf', class: 'accent-button', target: '_blank'
+
+
   .solutions__subheader= t('solutions.understanding.header')
   .solutions__content
     .solutions__quote= raw t('solutions.understanding.quote1')

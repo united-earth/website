@@ -268,6 +268,11 @@ en:
       text: "All the most inspiring, educational and practical information about the new paradigms and practices can be found on the Internet. You just need to know where to look. This toolkit is a humble beginning of the coming Solutions Portal, and provides a refined selection of videos, websites, articles, direct actions and more. Learning about the abundance of ecological solutions, possibilities and local actions helps you to feel hopeful and encouraged to become engaged and work together more effectively."
       button: 'Solutions-Awareness Toolkit'
 
+    transiation-plan:
+      header: 'The Global Transition Plan'
+      text: "This <i>plan</i> is crystallizing around the recognition that most of the cultural and ecological problems that we face are inherently systemic. Therefore, for people to find a harmonious balance within ourselves, each other, and our natural environment, will require a fundamental re-design of all our social systems. Fortunately, through movements such as Transition Towns and the political and economic reform that is happening in Iceland, Ecuador and Costa Rica, we now have living examples of how large groups of people can progressively and effectively change our ways to create systems that actually reflect our values and aspirations - all while building vibrant and resilient communities and honouring the rights of Nature."
+      button: 'The Global Transition Plan'
+
     portals:
       header: 'Current Solutions Portals'
       quote: "You never change things by fighting the existing reality.<br>To change something, build a new model that makes the existing model obsolete."
