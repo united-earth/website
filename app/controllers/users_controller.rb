@@ -1,10 +1,15 @@
 class UsersController < AdminController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :contacted]
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all.order(created_at: :desc)
+    @users = User.where(contacted: false).order(created_at: :desc)
+    @mode = :only_new
+    if params[:all]
+      @users = User.all.order(created_at: :desc)
+      @mode = :all
+    end
     @contributions = {}
     @users.each do |user|
       unless user.personal_info.nil?
@@ -12,7 +17,6 @@ class UsersController < AdminController
         @contributions[user.id] = contribs.join ', '
       end
     end
-    puts @contributions
   end
 
   # GET /users/1
@@ -68,6 +72,12 @@ class UsersController < AdminController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def contacted
+    @user.contacted = true
+    @user.save!
+    redirect_to action: :index
   end
 
   private

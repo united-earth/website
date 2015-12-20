@@ -1,4 +1,10 @@
-%h1 Listing users
+- if @mode == :all
+  =link_to 'show only new...', users_path, class: 'btn users_modeswitch'
+  %h1 Listing all users
+- else
+  =link_to 'show all...', users_path(all: true), class: 'btn users_modeswitch'
+  %h1 Listing only new users (not contacted yet)
+
 
 %table.display#users
   %thead
@@ -9,7 +15,7 @@
       %th Lastname
       %th Newsletter
       %th Contributions
-
+      %th Contacted
       %th
 
 
@@ -26,8 +32,9 @@
         - else
           %td= check_mark user.personal_info.newsletter
           %td= @contributions[user.id]
-
-        %td= link_to 'Show', user
+        %td= check_mark user.contacted
+        %td= link_to 'Show', user, class: 'btn primary'
+        %td= link_to 'Contacted', contacted_user_path(user), data: { confirm: "Did you really contact #{user.email}?" }, class: 'btn primary'
         - if false
           %td= link_to 'Edit', edit_user_path(user)
           %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }

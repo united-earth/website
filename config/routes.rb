@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
 
   scope "admin" do
-    resources :users
+    resources :users do
+      member do
+        get 'contacted'       => 'users#contacted', as: :contacted
+      end
+    end
     resources :groups, except: [:new, :create]
     get '/', to: redirect('/admin/users')
   end
