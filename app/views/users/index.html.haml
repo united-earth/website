@@ -1,6 +1,6 @@
 %h1 Listing users
 
-%table
+%table#users
   %thead
     %tr
       %th Username
@@ -8,24 +8,8 @@
       %th Firstname
       %th Lastname
       %th Newsletter
-      %th Feedback
-      %th Admin
-      %th Coordination
-      %th Writing
-      %th Translations
-      %th Webdev
-      %th Design
-      %th Development
-      %th Audio/Video
-      %th Communication
-      %th Networking
-      %th Education
-      %th Art
-      %th Management
-      %th Fundraising
-      %th Funding
-      %th Other
-      %th Expertise
+      %th Contributions
+
       %th
       %th
       %th
@@ -38,45 +22,11 @@
         %td= user.firstname
         %td= user.lastname
         - if user.personal_info.nil?
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
-          %td
+          %td <no co-creator>
+          %td <no co-creator>
         - else
           %td= check_mark user.personal_info.newsletter
-          %td= user.personal_info.public_feedback
-          %td= check_mark user.personal_info.contrib_admin
-          %td= check_mark user.personal_info.contrib_coord
-          %td= check_mark user.personal_info.contrib_writing
-          %td= check_mark user.personal_info.contrib_translations
-          %td= check_mark user.personal_info.contrib_webdev
-          %td= check_mark user.personal_info.contrib_design
-          %td= check_mark user.personal_info.contrib_dev
-          %td= check_mark user.personal_info.contrib_avprod
-          %td= check_mark user.personal_info.contrib_communication
-          %td= check_mark user.personal_info.contrib_networking
-          %td= check_mark user.personal_info.contrib_education
-          %td= check_mark user.personal_info.contrib_art
-          %td= check_mark user.personal_info.contrib_management
-          %td= check_mark user.personal_info.contrib_fundraising
-          %td= check_mark user.personal_info.contrib_funding
-          %td= user.personal_info.contrib_other
-          %td= user.personal_info.expertise
+          %td= @contributions[user.id]
 
         %td= link_to 'Show', user
         - if false

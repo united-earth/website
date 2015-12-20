@@ -5,11 +5,20 @@ class UsersController < AdminController
   # GET /users.json
   def index
     @users = User.all
+    @contributions = {}
+    @users.each do |user|
+      unless user.personal_info.nil?
+        contribs = contributions_strings_for_user user
+        @contributions[user.id] = contribs.join ', '
+      end
+    end
+    puts @contributions
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+
   end
 
   # GET /users/new
@@ -70,5 +79,19 @@ class UsersController < AdminController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:username, :email, :firstname, :lastname)
+    end
+
+    def contributions_strings_for_user(user)
+      strings = []
+      user.personal_info.attributes.each_pair do |name, value|
+        next if omitted_attributes_for_contribution_strings.include? name
+        puts name, value
+        strings << t("activerecord.attributes.personal_info.#{name}") if value
+      end
+      return strings
+    end
+
+    def omitted_attributes_for_contribution_strings
+      ['updated_at', 'created_at', 'id', 'add_voice', 'newsletter', 'public_feedback', 'contrib_other', 'expertise', 'user_id']
     end
 end

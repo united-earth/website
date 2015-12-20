@@ -12,6 +12,69 @@
 %p
   %b Lastname:
   = @user.lastname
+  
+%p
+  %div
+    %div
+      Newsletter:
+      =check_mark @user.personal_info.newsletter
+    %div 
+      Admin
+      = check_mark @user.personal_info.contrib_admin
+    %div 
+      Coordination
+      = check_mark @user.personal_info.contrib_coord
+    %div 
+      Writing
+      = check_mark @user.personal_info.contrib_writing
+    %div 
+      Translations
+      = check_mark @user.personal_info.contrib_translations
+    %div 
+      Webdev
+      = check_mark @user.personal_info.contrib_webdev
+    %div 
+      Design
+      = check_mark @user.personal_info.contrib_design
+    %div 
+      Development
+      = check_mark @user.personal_info.contrib_dev
+    %div 
+      Audio/Video
+      = check_mark @user.personal_info.contrib_avprod
+    %div 
+      Communication
+      = check_mark @user.personal_info.contrib_communication
+    %div 
+      Networking
+      = check_mark @user.personal_info.contrib_networking
+    %div 
+      Education
+      = check_mark @user.personal_info.contrib_education
+    %div 
+      Art
+      = check_mark @user.personal_info.contrib_art
+    %div 
+      Management
+      = check_mark @user.personal_info.contrib_management
+    %div 
+      Fundraising
+      = check_mark @user.personal_info.contrib_fundraising
+    %div 
+      Funding
+      = check_mark @user.personal_info.contrib_funding
+
+
+%p
+  %div
+    %span Feedback:
+    %span= @user.personal_info.public_feedback
+  %div
+    %span other:
+    %span= @user.personal_info.contrib_other
+  %div
+    %span expertise:
+    %span= @user.personal_info.expertise
 
 = link_to 'Edit', edit_user_path(@user)
 \|
