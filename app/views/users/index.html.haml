@@ -1,6 +1,6 @@
 %h1 Listing users
 
-%table#users
+%table.display#users
   %thead
     %tr
       %th Username
@@ -11,8 +11,7 @@
       %th Contributions
 
       %th
-      %th
-      %th
+
 
   %tbody
     - @users.each do |user|
