@@ -3,7 +3,7 @@
 %table.display#users
   %thead
     %tr
-      %th Username
+      %th Created at
       %th Email
       %th Firstname
       %th Lastname
@@ -16,7 +16,7 @@
   %tbody
     - @users.each do |user|
       %tr
-        %td= user.username
+        %td= user.created_at
         %td= user.email
         %td= user.firstname
         %td= user.lastname
