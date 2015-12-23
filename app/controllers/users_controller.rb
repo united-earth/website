@@ -85,6 +85,7 @@ class UsersController < AdminController
     User.all.each do |user|
       user.update_mailchimp_status
     end
+    redirect_to action: :index
   end
 
   private
