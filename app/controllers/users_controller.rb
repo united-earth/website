@@ -1,5 +1,6 @@
 class UsersController < AdminController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :contacted]
+  before_action :at_users
 
   # GET /users
   # GET /users.json
@@ -109,5 +110,9 @@ class UsersController < AdminController
 
     def omitted_attributes_for_contribution_strings
       ['updated_at', 'created_at', 'id', 'add_voice', 'newsletter', 'public_feedback', 'contrib_other', 'expertise', 'user_id']
+    end
+
+    def at_users
+      @at_users = true
     end
 end

@@ -1,5 +1,6 @@
 class GroupsController < AdminController
   before_action :set_group, only: [:show, :edit, :update, :destroy]
+  before_action :at_groups
 
   # GET /groups
   # GET /groups.json
@@ -70,5 +71,9 @@ class GroupsController < AdminController
     # Never trust parameters from the scary internet, only allow the white list through.
     def group_params
       params.require(:group).permit(:name, :contact_name, :contact_email, :country, :website, :logo, :cat_ecological, :cat_environment, :cat_indi, :cat_social, :cat_economics, :cat_political, :cat_animal, :cat_activism, :cat_tech, :cat_holistic, :cat_conscious, :comment)
+    end
+
+    def at_groups
+      @at_groups = true
     end
 end

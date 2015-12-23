@@ -6,12 +6,24 @@ body.admin
   line-height: 18px
 
   .menu
+    h1
+      display: inline-block
+      float: left
+      margin: 25px
+
     ul
+      float: right
       list-style: none
       li
         display: inline-block
         font-size: 40px
         margin: 30px 10px
+        &.active
+          background-color: #eee
+          height: 70px
+          line-height: 70px
+          border-radius: 4px
+          padding: 0 20px
 
   p, ol, ul, td
     font-family: verdana, arial, helvetica, sans-serif

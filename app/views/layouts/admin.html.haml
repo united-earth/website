@@ -8,7 +8,9 @@
     = csrf_meta_tags
   %body.admin{class: ('hide-header' if @at_landing)}
     .menu
+      .menu__logo=image_tag 'logo_black.svg' #render 'shared/logo'
+      %h1 Admin
       %ul
-        %li= link_to 'Users', '/admin/users'
-        %li= link_to 'Groups', '/admin/groups'
+        %li{ class: ('active' if @at_users) }= link_to 'Users', '/admin/users'
+        %li{ class: ('active' if @at_groups) }= link_to 'Groups', '/admin/groups'
     = yield
