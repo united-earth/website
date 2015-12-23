@@ -39,6 +39,7 @@ gem 'meta-tags'
 gem 'social-share-button'
 gem 'font-awesome-rails'
 gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'gibbon'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
