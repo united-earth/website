@@ -5,6 +5,7 @@
   =link_to 'show all...', users_path(all: true), class: 'btn users_modeswitch'
   %h1 Listing only new users (not contacted yet)
 
+=link_to 'sync mailchimp', sync_mailchimp_users_path, class: 'btn users_modeswitch'
 
 %table.display#users
   %thead

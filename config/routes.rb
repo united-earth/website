@@ -6,6 +6,9 @@ Rails.application.routes.draw do
       member do
         get 'contacted'       => 'users#contacted', as: :contacted
       end
+      collection do
+        get 'sync_mailchimp'  => 'users#sync_mailchimp', as: :sync_mailchimp
+      end
     end
     resources :groups, except: [:new, :create]
     get '/', to: redirect('/admin/users')
