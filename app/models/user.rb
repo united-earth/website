@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   scope :voice_added, -> { joins(:personal_info).where('personal_infos.add_voice = true') }
 
   def update_mailchimp_status
+    return if personal_info.nil?
+
     list_id = ENV['MAILCHIMP_LIST_ID']
     gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_API_KEY'])
 
