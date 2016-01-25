@@ -32,14 +32,14 @@ class ApplicationController < ActionController::Base
       image = 'http://staging.united-earth.vision/logo.png'
     end
     set_meta_tags title: 'United Earth',
-                  description: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.',
+                  description: 'We are co-creating the framework of an open, inclusive, equality-based and solutions-oriented global platform for all people and groups wishing to unite and collaborate towards a whole-systems transformation of human society.',
                   keywords: 'United, Earth, Co-creation, Unity, Collaboration, Transformation, Whole-System'
 
     set_meta_tags og: {
                       title:    'United Earth',
                       url:      url,
                       image:    image,
-                      description: 'United Earth extends a planetary invitation to all life-affirming persons and groups to unite and collaborate for a whole-systems transformation of human society.'
+                      description: 'We are co-creating the framework of an open, inclusive, equality-based and solutions-oriented global platform for all people and groups wishing to unite and collaborate towards a whole-systems transformation of human society.'
                   }
   end
 end
