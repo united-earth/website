@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     get 'actions/gathering'           => 'actions#gathering',                   as: :actions_gathering
     get 'actions/com21'               => 'actions#com21',                       as: :actions_com21
     get 'actions/un-solutions-summit' => 'actions#un_solutions_summit',         as: :actions_un
+    get 'actions/uefestival'          => 'actions#uefestival',                  as: :actions_uefestival
     get 'solutions'                   => 'pages#solutions',                     as: :solutions
     get 'donations'                   => 'pages#donations',                     as: :donations
   end

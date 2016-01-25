@@ -6,6 +6,10 @@ class ActionsController < ApplicationController
     @at_actions_index = true
   end
 
+  def uefestival
+    @at_uefestival = true
+  end
+
   def gathering
     @at_gathering = true
   end

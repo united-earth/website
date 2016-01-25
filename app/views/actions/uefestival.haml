@@ -1,0 +1,15 @@
+=render 'subheader'
+.actions.ue-container
+  .actions__header
+    =link_to 'https://united-earth.vision/UnitedEarthFestival.pdf', target: '_blank' do
+      =image_tag 'actions/uefestival/FB_post.jpg', class: 'actions__header_image'
+
+  .solutions__content
+    .solutions__quote= raw t('solutions.portals.quote')
+    .solutions__quote-author= t('solutions.portals.author')
+
+  %h1.actions__title= t('actions.uefestival.header')
+  %div= raw t('actions.uefestival.content')
+
+  .actions__program
+    =link_to 'View Program', 'https://united-earth.vision/UnitedEarthFestival.pdf', class: 'accent-button', target: '_blank'

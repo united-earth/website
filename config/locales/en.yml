@@ -169,6 +169,7 @@ en:
       gathering: 'Global Transition Gathering'
       com21: 'COM21'
       un: 'UN Solutions Summit'
+      uefestival: 'UE Festival'
 
 
     gathering:
@@ -183,6 +184,12 @@ en:
         content1: '<b>Saturday</b> is dedicated to healing the past - especially towards women and the First Peoples - by way of a Global Truth, Reconciliation and Forgiveness Ceremony. We believe that for humanity to move into a new paradigm of sharing and cooperation we must first collectively bring the reconciliation and healing of our past actions and violations into light. This "Global Medicine Wheel” will be co-created by voluntary groups around the world. Furthermore there will be special events facilitated with the guidance of indigenous and spiritual leaders and Elders to be held at sacred sites on all the continents. To complete this momentous ceremony we intend to collectively channel this powerful and transformative energy of forgiveness and healing into a unified prayer and intention for the restoration of Mother Earth.'
         content2: '<b>Sunday</b> is dedicated to celebrating our collective intention to work together to heal our Mother Earth - and to help bring awareness of alternative solutions to the forefront of mainstream attention. To promote a whole-systems transformation, we are inviting an infinitely creative, synchronised celebration through music, art, community, Earth restoration, etc. The only criterion is our collective intention to unite, cooperate and co-create a peaceful, free, just and abundant Earth for all, now and in the future.'
         content3: 'YES, this will be the biggest conscious and unified gathering the world has ever seen!'
+
+    uefestival:
+        header: 'Intention and Vision for an Online Celebration of Solutions'
+        content: 'Today we have countless solutions and alternative “new models” for us to effectively co­create t​he more beautiful world our hearts know is possible (Charles Eisenstein). Starkly, most of the world’s population is completely unaware of this vital and hopeful fact. To address the urgent planetary need to mainstream solutions­awareness; to bring our best innovative and ancient models to scale; and to inspire more holistic collaboration among all the groups that are working for a better world, United Earth is organising, hosting and gifting T​he United Earth Festival 2016 (UEF’16).​'
+        subtitle: '24 hours of sharing solutions for global transition'
+        date: 'March 19th - 20th'
 
     com21:
       title: 'The Conference of the Movements - The COM21'
