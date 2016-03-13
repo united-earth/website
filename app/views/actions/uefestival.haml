@@ -1,15 +1,15 @@
 =render 'subheader'
 .actions.ue-container.actions__ue-festival
   .actions__header
-    =link_to 'https://united-earth.vision/UnitedEarthFestival.pdf', target: '_blank' do
+    =link_to 'http://markhensonart.com/', target: '_blank' do
       =image_tag 'actions/uefestival/header.png', class: 'actions__header_image'
-    %p painting by Mark Henson
+      %p painting by Mark Henson
 
   %h1.actions__title= t('actions.uefestival.header')
   %h2.actions__subtitle is NOW OPEN for Registration!
   %div.actions__subtitle-com21
     Join us for this FREE online event as we celebrate a full day
-    of solutions, innovation, inspiration and synergistic co-creation
+    of solutions innovation, inspiration and synergistic co-creation
     with The United Earth Festival.
 
   %div.actions__bold-centered Celebrations kick off on March 19 at 11:00 UTC and continue until March 20 02:00 UTC and beyond…
@@ -58,9 +58,10 @@
         24:00 - 02:00 Compassion Games, Faces of Unity, Upcoming Events, Introduction to Synergy Hub 1.0 and celebrating
         %b The Global Unleashing of the United Earth Website!!
       %li
-        At 02:00 we collectively flow into the
-        %b Unify / Uplift Water Celebration
-        that synchronistically kicks-off when UEF'16 ends (and we're really just getting started!).
+        02:00 we collectively flow into the
+        %b
+          = link_to 'Unify / Uplift Water Celebration', 'http://blessthewater.com/bless-the-water-video/'
+        that synchronistically kicks-off when UEF'16 ends (and we're really just getting started!)
 
 
   .actions__wheel
@@ -71,10 +72,10 @@
   .actions__centered
     =image_tag 'actions/uefestival/uef_banner.jpg', class: 'actions__header_image'
 
-  .actions__program
+  .actions__content
     UEF’16 is a uniquely diverse and unifying event that will offer a full day of showcasing cutting-edge and grassroots solutions, timeless teachings, social architectures, whole-systems transition strategies and evolutionary communities, with innovators and mentors from all sectors of human society. We will also be interviewing other global unity and collaboration platforms to reveal our alignment and commitment to work together.
 
-  .actions__program
+  .actions__content
     The festival’s ‘whole-systems’ program will cover a spectrum of ecological, economic, technological and health solutions and include presenters:
     %ul
       %li
