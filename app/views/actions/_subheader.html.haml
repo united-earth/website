@@ -1,5 +1,6 @@
 = content_for :subheader do
   %ul
+    %li.actions-menu__list_item{ class: ('active' if @at_uecc) }= link_to t('actions.menu.uecc'), actions_uecc_path
     %li.actions-menu__list_item{ class: ('active' if @at_uefestival) }= link_to t('actions.menu.uefestival'), actions_uefestival_path
     %li.actions-menu__list_item{ class: ('active' if @at_com21) }= link_to t('actions.menu.com21'), actions_com21_path
     %li.actions-menu__list_item{ class: ('active' if @at_gathering) }= link_to t('actions.menu.gathering'), actions_gathering_path

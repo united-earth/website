@@ -6,6 +6,22 @@ class ActionsController < ApplicationController
     @at_actions_index = true
   end
 
+  def uecc
+    @at_uecc = true
+    url = 'https://united-earth.vision/en/actions/uecc'
+    image = 'https://united-earth.vision/uecc.jpg'
+    set_meta_tags title: 'United Earth Co-creator Convergence 2016',
+                  description: 'The United Earth Co-creator Convergence 2016 (UECC) will gather 100 heart-centred change-agents, whole-systems thinkers, technological innovators, wisdom keepers and conscious evolutionaries in a space that is designed to optimise our synergistic co-creation. We are inviting players from all sectors, all continents and all ages to meet, align and strategise around how we can best continue supporting the Movement of Movements. Space will also be made during the gathering to liaise with local government officials, progressive business leaders and the local academic community to initiate a broad-spectrum, transitional collaboration among these sectors',
+                  keywords: 'United, Earth, festival, movements, grassroots'
+
+    set_meta_tags og: {
+                      title:    'United Earth Co-creator Convergence 2016',
+                      url:      url,
+                      image:    image,
+                      description: 'The United Earth Co-creator Convergence 2016 (UECC) will gather 100 heart-centred change-agents, whole-systems thinkers, technological innovators, wisdom keepers and conscious evolutionaries in a space that is designed to optimise our synergistic co-creation. We are inviting players from all sectors, all continents and all ages to meet, align and strategise around how we can best continue supporting the Movement of Movements. Space will also be made during the gathering to liaise with local government officials, progressive business leaders and the local academic community to initiate a broad-spectrum, transitional collaboration among these sectors'
+                  }
+  end
+
   def uefestival
     @at_uefestival = true
     url = 'https://united-earth.vision/en/actions/uefestival'
